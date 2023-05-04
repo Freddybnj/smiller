@@ -157,7 +157,7 @@ header
 .navbar .links 
 {
     display: flex;
-    gap: 3rem;       
+    gap: 1.5rem;       
 }
 
 .navbar .toggle_btn 
@@ -279,7 +279,7 @@ footer
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1250px) 
+@media (max-width: 1100px) 
 {
     .navbar .links,
     .navbar .action_btn 
