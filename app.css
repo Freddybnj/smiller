@@ -81,9 +81,16 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body 
 {
-    height: 100vh;
+    height: calc(100vh - 80px);
+    padding-top: 80px;
+    margin-top: 80px;
     background-color: black;
     background: url('imgs/bg.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -96,6 +103,11 @@ body
 li
 {
     list-style: none;
+}
+
+p
+{
+    padding-top: 80px;
 }
 
 a 
@@ -125,9 +137,10 @@ header
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 80px;
     /* max-width: 1200px; */
-    margin: 5px auto;
+    margin-top: 0;
+    margin: 0 auto
     padding: 5px 5px;
     display: flex;
     align-items: center;
@@ -155,6 +168,11 @@ header
     top: 5px;
     display: none;
 
+}
+.navbar.scrolled {
+    /* background: rgb(222,192,222); */
+    background: #EE82EE;
+    transition: background 500ms;
 }
 
 .action_btn 
