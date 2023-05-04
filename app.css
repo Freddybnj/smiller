@@ -269,6 +269,15 @@ section#first
     margin-bottom: 1rem;
 }
 
+footer
+{
+    color: rgb(211, 98, 181);
+    font-weight: bold;
+    font-size: -1.5rem;
+    text-align: center;
+    
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 1150px) 
 {
