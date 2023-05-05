@@ -151,6 +151,15 @@ header
     height: 240px;
 }
 
+.first 
+{
+    /* display: flex;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    align-content: center; */
+}
+
 .dropdown_menu li 
 {
     padding: 0.7rem;
