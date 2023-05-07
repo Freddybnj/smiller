@@ -40,16 +40,16 @@ a:hover
 
 footer
 {
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
+    align-content: center;
     color: purple;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
 /* CLASSES */
-.divFooter p
+footer p
 {
     display: flex;
     justify-content: center;
@@ -63,6 +63,7 @@ footer
     height: 80px;
     margin: 0 auto;
     padding: 5px 5px; 
+    z-index: 1;
 }
 
 .navbar .logo a 
@@ -159,9 +160,15 @@ footer
 
 .first 
 {
-    margin-top: 100px;
+    margin-top: 300px;
+
     text-align: center;
     color: white;
+}
+
+.first-left 
+{
+    margin-top: 100px;
 }
 
 .navbar.scrolled {
