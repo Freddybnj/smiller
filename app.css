@@ -1,21 +1,16 @@
+/* All DEFAULTS */
 * 
 { 
-    margin: 0;
+    margin: 0 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-html
-{
-    scroll-behavior: smooth;
-}
-
+/* ELEMENTS */
 body 
 {
-    height: calc(100vh - 80px);
-    padding-top: 80px;
-    margin-top: 80px;
+    height: 100vh;
     background-color: black;
     background: url('imgs/bg.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -28,11 +23,6 @@ body
 li
 {
     list-style: none;
-}
-
-p
-{
-    padding-top: 80px;
 }
 
 a 
@@ -48,11 +38,21 @@ a:hover
     text-decoration: none;
 }
 
-/* HEADER */
-header 
+footer
 {
-    position: relative;
-    padding: 0 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: purple;
+    margin-bottom: 0;
+}
+
+/* CLASSES */
+.divFooter p
+{
+    display: flex;
+    justify-content: center;
 }
 
 .navbar 
@@ -61,13 +61,8 @@ header
     top: 0;
     width: 100%;
     height: 80px;
-    /* max-width: 1200px; */
-    margin-top: 0;
     margin: 0 auto;
-    padding: 5px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;    
+    padding: 5px 5px; 
 }
 
 .navbar .logo a 
@@ -80,7 +75,8 @@ header
 .navbar .links 
 {
     display: flex;
-    gap: 1.5rem;       
+    margin-right: 125px;
+    gap: 4rem;       
 }
 
 .navbar .toggle_btn 
@@ -90,12 +86,7 @@ header
     cursor: pointer;
     top: 5px;
     display: none;
-}
 
-.navbar.scrolled {
-    /* background: rgb(222,192,222); */
-    background: #EE82EE;
-    transition: background 500ms;
 }
 
 .action_btn 
@@ -130,7 +121,7 @@ header
     border-radius:30%;
 }
 
-/* DROPDOWN MENU */
+/* CLASSES - DROPDOWN MENU */
 .dropdown_menu 
 {
     display: none;
@@ -151,15 +142,6 @@ header
     height: 240px;
 }
 
-.first 
-{
-    /* display: flex;
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    align-content: center; */
-}
-
 .dropdown_menu li 
 {
     padding: 0.7rem;
@@ -170,49 +152,28 @@ header
 
 .dropdown_menu .action_btn 
 {
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-}
-
-.pictures 
-{
     width: 100%;
-    height: 720px;
-
-    background-color: black;
-
+    display: flex;
+    justify-content: center;
 }
 
-section#first 
+.first 
 {
-    height: calc(100vh - 60px); 
-    width: 100%;  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 100px;
     text-align: center;
     color: white;
 }
 
-#hero h1 
-{
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
 }
 
-footer
-{
-    color: rgb(211, 98, 181);
-    font-weight: bold;
-    font-size: -1.5rem;
-    text-align: center;
-    
-}
+/* IDs */
+
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1100px) 
+@media (max-width: 1150px) 
 {
     .navbar .links,
     .navbar .action_btn 
@@ -228,7 +189,6 @@ footer
         display: block;
     }
 }
-
 @media (max-width: 525px) 
 {
     .dropdown_menu 
