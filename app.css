@@ -161,14 +161,21 @@ footer p
 .first 
 {
     margin-top: 300px;
-
     text-align: center;
     color: white;
+    margin-bottom: 100px;
 }
 
-.first-left 
+.first-left p
 {
     margin-top: 100px;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.main-p
+{
+    margin: 100px 25px;
 }
 
 .navbar.scrolled {
