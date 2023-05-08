@@ -38,19 +38,15 @@ a:hover
     text-decoration: none;
 }
 
-footer
+.footer
 {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center; */
-    position: fixed;
+
     margin-bottom: 5px;
-    bottom: 0;
-    left: 5px;
+    margin-bottom: 0;
 }
 
 /* CLASSES */
-footer p
+.footer p
 {
     color: purple;
 }
@@ -61,7 +57,7 @@ footer p
     top: 0;
     width: 100%;
     height: 80px;
-    margin: 0 auto;
+    margin: 0 auto;    
     padding: 5px 5px; 
     z-index: 1;
 }
@@ -75,10 +71,10 @@ footer p
 
 .navbar .links 
 {
+    margin-top:20px;
     display: flex;
-    /* margin-right: 100px;
-    margin-left: 100px; */
-    gap: 3rem;       
+    margin-right: 125px;
+    gap: 4rem;       
 }
 
 .navbar .toggle_btn 
@@ -115,21 +111,6 @@ footer p
 {
     scale: 0.95;
 }
-
-/* .arrowUp
-{    
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    margin-bottom: 5px;
-    bottom: 10;
-}
-.arrow
-{
-    opacity: 40%;
-    font-size: 1.5rem;
-} */
-/* background */
 
 #brand-logo 
 {
@@ -174,28 +155,42 @@ footer p
     justify-content: center;
 }
 
-.first 
+.name-header
 {
-    margin-top: 300px;
-    text-align: center;
+    margin-top: 150px;
+    margin-left: 200px;    
     color: white;
-    margin-bottom: 100px;
 }
 
-.first-left p
+.name-title p
 {
-    margin-top: 100px;
+    margin-top: 50px;
+
+}
+
+.name
+{
     font-size: 3.5rem;
     font-weight: bold;
 }
 
-.main-p
+.title
 {
-    margin: 100px 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.main
+{
+    margin-top: 600px;
+    background-color: #2a1c3c;
+    color: white;
+    
 }
 
 .navbar.scrolled {
-    background: rgb(222,192,222);
+    background: #484071;
     transition: background 500ms;
 }
 
@@ -211,7 +206,7 @@ footer p
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1300px) 
+@media (max-width: 1480px) 
 {
     .navbar .links,
     .navbar .action_btn 
@@ -229,17 +224,35 @@ footer p
 }
 @media (max-width: 525px) 
 {
-    .first
+    .name
+    {
+        font-size: 1.5rem;
+        font-weight: normal;
+        align-items: left;
+    }
+
+    .title
+    {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .name-header
+    {
+        margin-top: 200px;
+        margin-left: 25px;
+    }
+    /* .first
     {
         flex-direction: column;
-    }
+    } */
     .dropdown_menu 
     {
         margin-top: 20px;
         left: 2rem;
         width: unset;
     }
-    footer p
+    .footer p
     {
 
         font-size: 11px;
