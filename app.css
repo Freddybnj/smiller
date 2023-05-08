@@ -74,8 +74,9 @@ footer p
 .navbar .links 
 {
     display: flex;
-    margin-right: 125px;
-    gap: 4rem;       
+    /* margin-right: 100px;
+    margin-left: 100px; */
+    gap: 3rem;       
 }
 
 .navbar .toggle_btn 
