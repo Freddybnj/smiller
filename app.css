@@ -40,11 +40,13 @@ a:hover
 
 footer
 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
+    position: fixed;
     margin-bottom: 5px;
     bottom: 0;
+    left: 5px;
 }
 
 /* CLASSES */
@@ -112,6 +114,20 @@ footer p
 .action_btn:active 
 {
     scale: 0.95;
+}
+
+.arrowUp
+{    
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-bottom: 5px;
+    bottom: 10;
+}
+.arrow
+{
+    opacity: 40%;
+    font-size: 1.5rem;
 }
 
 #brand-logo 
