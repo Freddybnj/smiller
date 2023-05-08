@@ -9,8 +9,8 @@
 
 /* ELEMENTS */
 body 
-{
-    height: 100vh;
+{   
+    min-height: 875px;
     background-color: black;
     background: url('imgs/bg.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -40,19 +40,17 @@ a:hover
 
 footer
 {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
     bottom: 0;
-    align-content: center;
-    color: purple;
-    margin-top: 25px;
-    margin-bottom: 0;
 }
 
 /* CLASSES */
 footer p
 {
-    display: flex;
-    justify-content: center;
+    color: purple;
 }
 
 .navbar 
@@ -184,10 +182,18 @@ footer p
 }
 
 /* IDs */
+#vid
+{
+    order: 1;
+}
+#sum
+{
+    order: 0;    
+}
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1150px) 
+@media (max-width: 1270px) 
 {
     .navbar .links,
     .navbar .action_btn 
@@ -205,10 +211,20 @@ footer p
 }
 @media (max-width: 525px) 
 {
+    .first
+    {
+        flex-direction: column;
+    }
     .dropdown_menu 
     {
         margin-top: 20px;
         left: 2rem;
         width: unset;
+    }
+    footer p
+    {
+
+        font-size: 11px;
+        color: blue;
     }
 }
