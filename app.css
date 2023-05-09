@@ -38,11 +38,29 @@ a:hover
     text-decoration: none;
 }
 
+.arrowUpShow
+{
+    display: flex;  
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-top: 750px;
+    position: fixed; 
+}
+.arrowUp
+{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-top: 700px;    
+    position: fixed;
+}
+
 .footer
 {
 
-    margin-bottom: 5px;
     margin-bottom: 0;
+    padding-top: 12px;
+    margin-left: 25px;
 }
 
 /* CLASSES */
@@ -157,7 +175,7 @@ a:hover
 
 .name-header
 {
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 200px;    
     color: white;
 }
@@ -174,6 +192,31 @@ a:hover
     font-weight: bold;
 }
 
+.about-me
+{
+    text-align: center;
+    margin-left: 150px;
+    height: 600px;
+}
+.about-me-title
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+.about-phoenix
+{
+    text-align: center;
+    margin-left: 130px;
+    height: 600px;
+}
+.about-phoenix-title
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
 .title
 {
     font-size: 2rem;
@@ -181,9 +224,37 @@ a:hover
     
 }
 
+.video
+{
+    height: 450px;
+    width: 450px;
+}
+
+.pic-div
+{
+    margin-left: 150px;
+}
+
+.pho-picture
+{
+    
+    height: 650px;  
+    width: 450px;
+}
+
 .main
 {
+    height: 1550px;
+    padding-top: 50px;
     margin-top: 600px;
+    background-color: #2a1c3c;
+    color: white;
+    
+}
+.main-bottom
+{
+    padding-top: 50px;
+    margin-top: 50px;
     background-color: #2a1c3c;
     color: white;
     
@@ -193,17 +264,12 @@ a:hover
     background: #484071;
     transition: background 500ms;
 }
+.footer.scrolled {
+    background: #484071;
+    transition: background 500ms;
+}
 
 /* IDs */
-#vid
-{
-    order: 1;
-}
-#sum
-{
-    order: 0;    
-}
-
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 1480px) 
