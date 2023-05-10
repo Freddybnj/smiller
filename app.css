@@ -40,7 +40,7 @@ a:hover
 
 .arrowShow
 {
-    display: show;
+    display: none;
     /* display: flex;  
     justify-content: flex-end;  */
     bottom: 0;
@@ -56,16 +56,17 @@ a:hover
 
 .footer
 {
-
-    margin-bottom: 0;
     padding-top: 12px;
-    margin-left: 25px;
+    margin-left: 0px;
+    background: #484071;
+    height: 45PX;
 }
 
 /* CLASSES */
 .footer p
-{
+{   
     color: purple;
+    margin-left: 25px;
 }
 
 .navbar 
@@ -249,8 +250,8 @@ a:hover
 
 .main
 {
-    height: 1000px;
-    padding-top: 50px;
+    height: 600px;
+    padding-top: 75px;
     margin-top: 600px;
     background-color: #2a1c3c;
     color: white;
@@ -258,9 +259,8 @@ a:hover
 }
 .main-bottom
 {
-    height: 1000px;
-    padding-top: 0;
-    margin-top: 0;
+    height: 800px;
+    padding-top: 75px;    
     background-color: #0b5351;
     color: white;
     
