@@ -12,7 +12,7 @@ body
 {   
     /* min-height: 875px; */
     background-color: black;
-    background: url('imgs/bg.png') no-repeat center center fixed; 
+    background: url('imgs/campground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
