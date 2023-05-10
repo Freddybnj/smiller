@@ -249,7 +249,7 @@ a:hover
 
 .main
 {
-    height: 1550px;
+    height: 1000px;
     padding-top: 50px;
     margin-top: 600px;
     background-color: #2a1c3c;
@@ -258,8 +258,9 @@ a:hover
 }
 .main-bottom
 {
-    padding-top: 50px;
-    margin-top: 50px;
+    height: 1000px;
+    padding-top: 0;
+    margin-top: 0;
     background-color: #0b5351;
     color: white;
     
