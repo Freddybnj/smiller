@@ -23,7 +23,7 @@
     <title>Shannon Miller</title>
 </head>
 
-<body> 
+<body id = "main"> 
     <nav class = "navbar navbar-fixed-top" id = "mainNavbar">
         <div class="container-fluid">
             <div class="logo"><a href="index.html"><img src="imgs/SMW.png" id = "brand-logo"></a></div>
@@ -54,11 +54,8 @@
             </div> 
         </div>     
     </nav> 
-    <div class="container-fluid arrowShow" id = "arrow">
-        <a href="index.html" class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow"></a>
-    </div>
 
-    <div class = "name-header container">        
+    <div class = "name-header container" >        
         <div class="row">
             <div class="col-6 name-title">            
                 <p class = "name">Shannon Miller</p>
@@ -134,27 +131,40 @@
                 });
             });
         </script>
-        <!-- <script>
-    window.addEventListener('scroll', () => {
-        var scrollable = document.documentElement.scrollHeight - window.innerHeight;
-        var scrolled = window.scrollY;
-        var arrow = $("#arrow");
-        
+        <script>
+            let scrollpos = window.scrollY
+            const arrow = document.querySelector("#arrow");
+          
+            const add_class_on_scroll = () => arrow.classList.add("arrowShow");
+            const remove_class_on_scroll = () => arrow.classList.remove("arrowhide")
+          
+            window.addEventListener('scroll', function() { 
+                const add_class_on_scroll = () => arrow.classList.add("arrowHide");
+                const remove_class_on_scroll = () => arrow.classList.remove("arrowHide")
+                scrollpos = window.scrollY;
+                const arrow = document.querySelector("#arrow");
+          
+              if (scrollpos > 1605) { remove_class_on_scroll()}
+              else { add_class_on_scroll() }
+          
+              console.log(scrollpos)
+              console.log(arrow.classList)
+            })
+          </script>
+          <script>
+            function scroll () 
+            {
+                window.scrollTo(0, 0);
+            }
 
-        if(scrolled = scrollable){
-            console.log(`This is the scrolled ${scrolled}`);
-            console.log(`This is the scrollable ${scrollable}`);
-            // arrow.toggleClass("arrowShow");
+          </script>
 
-            // alert('Hello');
-        }
-        
-     
-    });
-</script> -->
-    </body>
-    <div class = "footer">       
+    <div class = "container-fluid footer">       
         <p>Copyright © 2023 Shannon Miller Films - All Rights Reserved.</p>
-    </div> 
-
+        <span id = "arrow">
+            <button class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow btn bg-transparent arrowSet"  onclick="window.scrollTo(0, 0)">                
+            </button>            
+        </span>
+    </div>
+    </body>
 </html>

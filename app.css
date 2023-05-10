@@ -8,6 +8,10 @@
 }
 
 /* ELEMENTS */
+html
+{
+    scroll-behavior: smooth;
+}
 body 
 {   
     /* min-height: 875px; */
@@ -37,39 +41,62 @@ a:hover
     color: #ab8fbc;
     text-decoration: none;
     -webkit-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
--moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+}
+
+.arrowSet
+{
+    display: show;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgba(255 255, 255, .3);
+}
+.arrowSet:hover
+{
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
 }
 
 .arrowShow
-{
-    display: none;
-    /* display: flex;  
-    justify-content: flex-end;  */
-    bottom: 0;
-    margin-right: 25px;
-    font-size: 1.5rem;
-    padding-top: 750px; 
+{   
+    display: show;    
 }
 
-.arrowUp
+.arrowHide
 {
     display: none;
+}
+
+.buttonHide
+{
+    width: 0;
+    height: 0;
 }
 
 .footer
 {
+    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
     padding-top: 12px;
     margin-left: 0px;
     background: #484071;
     height: 45PX;
+    padding-right: 50px;
 }
 
 /* CLASSES */
 .footer p
 {   
-    color: purple;
+    color: rgba(255 255, 255, .3);
     margin-left: 25px;
+    font-style: italic;
 }
 
 .navbar 
