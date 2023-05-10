@@ -40,10 +40,11 @@ a:hover
 
 .arrowShow
 {
-    display: flex;  
-    justify-content: flex-end;
+    /* display: show;
+    /* display: flex;  
+    justify-content: flex-end; */
     font-size: 1.5rem;
-    padding-top: 750px;
+    padding-top: 750px; */
 
 }
 .arrowUp
