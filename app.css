@@ -22,7 +22,7 @@ body
 
 li
 {
-    list-style: none;
+    list-style: none;    
 }
 
 a 
@@ -38,7 +38,7 @@ a:hover
     text-decoration: none;
 }
 
-.arrowUpShow
+.arrowShow
 {
     display: flex;  
     justify-content: flex-end;
@@ -48,11 +48,8 @@ a:hover
 }
 .arrowUp
 {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    padding-top: 700px;    
-    position: fixed;
+    display: none;
+
 }
 
 .footer
@@ -93,6 +90,11 @@ a:hover
     display: flex;
     margin-right: 125px;
     gap: 4rem;       
+}
+
+.dots 
+{
+    margin-top: 13px;
 }
 
 .navbar .toggle_btn 
@@ -182,13 +184,12 @@ a:hover
 
 .name-title p
 {
-    margin-top: 50px;
-
+    margin-top: 25px;
 }
 
 .name
 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 

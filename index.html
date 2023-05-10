@@ -30,13 +30,13 @@
     
             <ul class="links">
                 <li><a href="stopMotion.html">Stop Motion</a></li>
-                <li style="color:purple"><i class="fa-sharp fa-solid fa-heart"></i></li>
+                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>
                 <li><a href="liveAction.html">Live Action</a></li>
-                <li style="color:purple"><i class="fa-sharp fa-solid fa-heart"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="productionDesign.html">Production Design</a></li>
-                <li style="color:purple"><i class="fa-sharp fa-solid fa-heart"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="characterDesign.html">Character Design</a></li>
-                <li style="color:purple"><i class="fa-sharp fa-solid fa-heart"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="propDesign.html">Prop Design</a></li>
             </ul>
             <a href="#" class="action_btn">Contact</a>
@@ -53,7 +53,7 @@
             </div> 
         </div>     
     </nav> 
-    <div class="arrowUp container-fluid">
+    <div class="container-fluid" id = "arrow">
         <a href="index.html" class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow"></a>
     </div>
 
@@ -61,7 +61,7 @@
         <div class="row">
             <div class="col-6 name-title">            
                 <p class = "name">Shannon Miller</p>
-                <p class = "title">Screenwriter, Filmmaker</p>
+                <p style = "font-size: 20px" class = "title">Screenwriter, Filmmaker</p>
             </div>
         </div>
     </div>
@@ -132,6 +132,22 @@
                 });
             });
         </script>
+        <script>
+    window.addEventListener('scroll', () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+        var arrow = $("#arrow");
+        
+
+        if(scrolled = scrollable){
+            console.log(scrolled);
+            console.log(scrollable);
+            arrow.classList.add("arrowShow");
+        }
+        
+     
+    });
+</script>
     </body>
     <div class = "footer">       
         <p>Copyright © 2023 Shannon Miller Films - All Rights Reserved.</p>
