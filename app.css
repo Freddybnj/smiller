@@ -40,13 +40,15 @@ a:hover
 
 .arrowShow
 {
-    /* display: show;
+    display: show;
     /* display: flex;  
-    justify-content: flex-end; */
+    justify-content: flex-end;  */
+    bottom: 0;
+    margin-right: 25px;
     font-size: 1.5rem;
-    padding-top: 750px; */
-
+    padding-top: 750px; 
 }
+
 .arrowUp
 {
     display: none;
