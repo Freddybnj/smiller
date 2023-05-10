@@ -180,19 +180,19 @@ a:hover
 
 .name-header
 {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: 200px;    
     color: white;
 }
 
 .name-title p
 {
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .name
 {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     font-weight: bold;
 }
 
@@ -225,6 +225,7 @@ a:hover
 {
     font-size: 2rem;
     font-weight: bold;
+    margin-left: 50px;
     
 }
 
