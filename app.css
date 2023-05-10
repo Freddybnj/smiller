@@ -44,12 +44,12 @@ a:hover
     justify-content: flex-end;
     font-size: 1.5rem;
     padding-top: 750px;
-    position: fixed; 
+    bottom: 0;
+
 }
 .arrowUp
 {
     display: none;
-
 }
 
 .footer
@@ -94,7 +94,7 @@ a:hover
 
 .dots 
 {
-    margin-top: 11px;
+    margin-top: 15px;
 }
 
 .navbar .toggle_btn 

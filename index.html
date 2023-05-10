@@ -30,13 +30,13 @@
     
             <ul class="links">
                 <li><a href="stopMotion.html">Stop Motion</a></li>
-                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>
+                <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #ffffff;"></i></li>
                 <li><a href="liveAction.html">Live Action</a></li>
-                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="productionDesign.html">Production Design</a></li>
-                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="characterDesign.html">Character Design</a></li>
-                <li <i class="fa-sharp fa-solid fa-circle fa-xs dots" style="color: #f9fafa;"></i></li>                    
+                <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="propDesign.html">Prop Design</a></li>
             </ul>
             <a href="#" class="action_btn">Contact</a>
@@ -53,7 +53,7 @@
             </div> 
         </div>     
     </nav> 
-    <div class="container-fluid" id = "arrow">
+    <div class="container-fluid" id = "arrow" class = "arrowUp">
         <a href="index.html" class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow"></a>
     </div>
 
@@ -134,15 +134,15 @@
         </script>
         <script>
     window.addEventListener('scroll', () => {
-        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-        const scrolled = window.scrollY;
+        var scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        var scrolled = window.scrollY;
         var arrow = $("#arrow");
         
 
         if(scrolled = scrollable){
             console.log(scrolled);
             console.log(scrollable);
-            arrow.classList.add("arrowShow");
+            arrow.toggleClass("arrowShow");
         }
         
      
