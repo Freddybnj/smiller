@@ -72,12 +72,6 @@ a:hover
     display: none;
 }
 
-.buttonHide
-{
-    width: 0;
-    height: 0;
-}
-
 .footer
 {
     display: flex;
