@@ -10,7 +10,7 @@
 /* ELEMENTS */
 body 
 {   
-    min-height: 875px;
+    /* min-height: 875px; */
     background-color: black;
     background: url('imgs/bg.png') no-repeat center center fixed; 
     -webkit-background-size: cover;
