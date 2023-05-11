@@ -72,6 +72,12 @@ a:hover
     display: none;
 }
 
+.buttonHide
+{
+    width: 0;
+    height: 0;
+}
+
 .footer
 {
     display: flex;
@@ -212,14 +218,13 @@ a:hover
 
 .name-title p
 {
-    margin-top: 0;
+    margin-top: 50px;
 }
 
 .name
 {
     font-size: 3.5rem;
     font-weight: bold;
-    margin-bottom: 0;
 }
 
 .about-me
@@ -332,7 +337,6 @@ a:hover
     {
         font-size: 1rem;
         font-weight: normal;
-        padding-top: 1px;
     }
     
     .name-header
