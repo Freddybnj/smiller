@@ -72,6 +72,7 @@ a:hover
     display: none;
 }
 
+
 .footer
 {
     display: flex;
@@ -220,6 +221,12 @@ a:hover
     font-size: 3.5rem;
     font-weight: bold;
 }
+.title 
+{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+}
 
 .about-me
 {
@@ -244,14 +251,6 @@ a:hover
     font-size: 2.5rem;
     font-weight: bold;
 
-}
-
-.title
-{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 50px;
-    
 }
 
 .video
@@ -318,7 +317,42 @@ a:hover
         display: block;
     }
 }
-@media (max-width: 525px) 
+@media (max-width: 505px) 
+{
+    .name
+    {
+        font-size:1.5em;
+        font-weight: normal;
+        align-items: left;
+    }
+
+    .title
+    {
+        font-size: .75em;
+        font-weight: normal;
+        margin-left: 10px;
+    }
+    
+    .name-header
+    {
+        margin-top: 275px;
+        margin-left: 10px;
+    }
+    .dropdown_menu 
+    {
+        margin-top: 20px;
+        left: 2rem;
+        width: unset;
+    }
+    
+    .footer p
+    {
+
+        font-size: 11px;
+        color: blue;
+    }
+}
+/* @media (max-width: 525px) 
 {
     .name
     {
@@ -338,10 +372,6 @@ a:hover
         margin-top: 200px;
         margin-left: 25px;
     }
-    /* .first
-    {
-        flex-direction: column;
-    } */
     .dropdown_menu 
     {
         margin-top: 20px;
@@ -354,4 +384,4 @@ a:hover
         font-size: 11px;
         color: blue;
     }
-}
+} */
