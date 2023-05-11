@@ -212,13 +212,14 @@ a:hover
 
 .name-title p
 {
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .name
 {
     font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .about-me
@@ -331,6 +332,7 @@ a:hover
     {
         font-size: 1rem;
         font-weight: normal;
+        padding-top: 1px;
     }
     
     .name-header
