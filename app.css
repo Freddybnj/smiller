@@ -216,15 +216,19 @@ a:hover
     color: white;
 }
 
-.name-title p
-{
-    margin-top: 50px;
-}
-
 .name
 {
     font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 0;
+}
+
+.title
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 50px;
+    
 }
 
 .about-me
@@ -250,14 +254,6 @@ a:hover
     font-size: 2.5rem;
     font-weight: bold;
 
-}
-
-.title
-{
-    font-size: 2rem;
-    font-weight: bold;
-    margin-left: 50px;
-    
 }
 
 .video
