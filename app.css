@@ -218,7 +218,7 @@ a:hover
 
 .name-title p
 {
-    margin-top: 50px;
+    margin-top: 0;
 }
 
 .name
@@ -257,6 +257,7 @@ a:hover
     font-size: 2rem;
     font-weight: bold;
     margin-left: 50px;
+    margin-top: 0;
     
 }
 
