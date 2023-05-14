@@ -200,8 +200,6 @@ a:hover
 
 .name-header
 {   
-    display: flex;
-    flex-direction: row;
     margin-top: 300px;
     margin-left: 200px;    
     color: white;
@@ -225,6 +223,7 @@ a:hover
 .about-me
 {
     text-align: center;
+    line-height: 2rem;
     margin-left: 100px;
     max-height: 1800px;
 }
@@ -241,9 +240,10 @@ a:hover
 .about-phoenix
 {
     text-align: center;
-    margin-left: 175px;
-    max-height: 1200px;
-    max-width: 800px;    
+    margin-top: 150px;
+    margin-left: 325px;
+    max-height: 800px;
+    max-width: 500px;    
 }
 .about-phoenix-title
 {
@@ -261,19 +261,19 @@ a:hover
     margin-left: 175px;
     max-height: 500px;
     max-width: 750px;
-    margin-bottom: 75px; 
+    margin-bottom: 50px; 
 }
 
 .pic-div
 {
-    margin-left: 75px;
+    margin-left: 125px;
 }
 
 .pho-picture
 {
     
-    max-height: 900px;  
-    max-width: 650px;
+    max-height: 800px;  
+    max-width: 550px;
 }
 
 .main
@@ -328,43 +328,44 @@ a:hover
         display: block;
     }
 }
-@media (max-width: 525px) 
+@media (max-width: 725px) 
 {
+    body 
+        {
+            height: 100vh;
+        }
+
+    .name-header
+        {   
+            margin-top: 300px;
+            margin-left: 20px;    
+            color: white;
+        }
+
     .name
-    {
-        font-size: 1.5rem;
-        font-weight: normal;
-        margin-left: 5px;
-    }
+        {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
 
     .title
-    {
-        font-size: 1rem;
-        font-weight: normal;
-    }
-    
-    .name-header
-    {
-        display: flex;
-        flex-direction: column;
-        margin-top: 200px;
-        margin-left: 25px;
-        color: white;
-    }
+        {
+            font-size: .75rem;
+            font-weight: bold;
+            margin-left: 10px;
+            
+        }
 
-    }
-    /* .first
-    {
-        flex-direction: column;
-    } */
     .dropdown_menu 
-    {
-        margin-top: 20px;
-        left: 2rem;
-        width: unset;
-    }
+        {
+            margin-top: 20px;
+            left: 2rem;
+            width: unset;
+        }
     .footer p
-    {
-
-        font-size: 11px;    
-    }
+        {
+            bottom: 0;
+            font-size: 11px;    
+        }
+}
