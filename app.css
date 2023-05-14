@@ -266,6 +266,14 @@ a:hover
     margin-bottom: 70px; 
 }
 
+.left-video
+{
+    margin-left: 00px;
+    max-height: 500px;
+    max-width: 750px;
+    margin-bottom: 70px; 
+}
+
 .pic-div
 {
     margin-left: 125px;
@@ -276,6 +284,12 @@ a:hover
     
     max-height: 800px;  
     max-width: 550px;
+}
+.pho-picture-sm
+{
+    margin-top: 5px;
+    max-height: 600px;  
+    max-width: 375px;
 }
 
 .main
@@ -290,6 +304,58 @@ a:hover
     color: white;
     
 }
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .video-wrapper {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  
+  .video-wrapper iframe {
+    width: 100%;
+    height: 400px;
+  }
+  .video-wrapper p {
+    color: white;
+    font-size: 2.0rem;
+  }
+  .stopMotionHeader {
+    display: flex;
+    justify-content: center; 
+    color: white;
+    font-size: 3.0rem;
+    margin-top: 150px;
+  }
+
+
+
+
+
+
+
+.main-videos
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-top: 75px;
+    margin-top: 100px;
+    background-color: #2a1c3c;
+    color: white;
+    
+}
+.main-videos p
+{
+    text-align: center;
+}
+
 .main-bottom
 {
     display: grid;
