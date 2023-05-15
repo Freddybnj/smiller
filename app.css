@@ -435,4 +435,34 @@ a:hover
             bottom: 0;
             font-size: 11px;    
         }
+        .videos-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+          }
+          
+          .video-wrapper {
+            /* flex-direction: row; */
+            margin: 0 20px;
+            text-align: center;
+          }
+          
+          .video-wrapper iframe {
+            width: 100%;
+            height: 400px;
+          }
+          .video-wrapper p {
+            margin-top: 100px;
+            color: white;
+            font-size: 2.0rem;
+          }
+          .stopMotionHeader {
+            display: flex;
+            justify-content: center; 
+            color: white;
+            font-size: 3.0rem;
+            margin-top: 150px;
+          }
 }
