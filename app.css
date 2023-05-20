@@ -435,6 +435,47 @@ a:hover
         font-size: 2.0rem;
       } */
 }
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    body {
+      background-color: rgba(165, 158, 158, 0.5); /* Darken background color */
+      -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
+      backdrop-filter: blur(10px);
+    }
+  }
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) {
+    .dropdown_menu li 
+{
+    color: black;
+}
+  /* CSS rules specific to iPad Portrait */
+}
+
+/* iPad Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) {
+  /* CSS rules specific to iPad Landscape */
+}
+/* iPhone Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+  /* CSS rules specific to iPhone Portrait */
+}
+
+/* iPhone Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) {
+  /* CSS rules specific to iPhone Landscape */
+}
 
 @media (max-width: 740px) 
 {
