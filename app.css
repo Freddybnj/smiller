@@ -324,6 +324,26 @@ a:hover
     margin-top: 175px;
     margin-bottom: 0px;
   }
+  #coming-soon {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-left: 200px;
+  }
+  #cs-title {
+    color: white;
+    font-size: 2.75rem;
+    margin-top: 25px;
+    margin-left: 200px;
+  }
+  #cs-par {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 75px;
+    padding-bottom: 25px;
+    margin-left: 200px;
+  }
 
 .videos-container {
     display: flex;
@@ -562,11 +582,13 @@ a:hover
             color: white;
             font-size: 2.5rem;
             margin-top: 5px;
+            margin-left: unset;
           }
           #cs-title {
             color: white;
             font-size: 2.75rem;
             margin-top: 25px;
+            margin-left: unset;
           }
           #cs-par {
             color: white;
@@ -574,6 +596,7 @@ a:hover
             line-height: 2.5rem;
             margin-top: 75px;
             padding-bottom: 25px;
+            margin-left: unset;
           }
 
 
@@ -617,7 +640,7 @@ a:hover
             margin-right: 0;
             padding-left: 0;
             padding-right: 0;
-            max-width: 475px;
+            max-width: 100%;
             margin-top: 0;
             padding-top: 15px;
             background-color: #0b5351;
@@ -702,22 +725,10 @@ a:hover
     justify-content: center; 
     align-content: center;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 50px;
     color: white;
     font-size: 1.25rem;
     margin-top: 100px;
-    margin-bottom: 15px;
-  }
-.stopMotionHeader2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-content: center;
-    align-items: center;
-    margin-left: 0px;
-    color: white;
-    font-size: 1.25rem;
-    margin-top: 1px;
     margin-bottom: 50px;
   }
 .topStopMotionHeader {
