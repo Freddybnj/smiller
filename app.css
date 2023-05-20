@@ -413,14 +413,7 @@ a:hover
 /* IDs */
 
 /* RESPONSIVE DESIGN */
-@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    .dropdown_menu 
-{
-    background-color: rgba(0, 0, 0, 0.5); /* Darken background color */
-    -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
-    backdrop-filter: blur(10px);
-}
-  }
+
 
 @media (max-width: 1405px) 
 {
@@ -465,9 +458,16 @@ a:hover
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (orientation: portrait) {
-    .dropdown_menu li 
+    .dropdown_menu 
     {
-        color: white;
+        background-color: rgba(150, 149, 149, 0.3); /* Darken background color */
+        -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
+    
+        backdrop-filter: blur(10px);
+    }
+    .dropdown_menu li a
+    {
+    color: black;
     }
   /* CSS rules specific to iPhone Portrait */
 }
