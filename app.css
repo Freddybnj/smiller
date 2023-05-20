@@ -17,7 +17,7 @@ body
     background-color: black;
     background: url('imgs/pose-2-color-v5.jpeg') no-repeat center center fixed; 
     -webkit-background-size: cover;
-    -webkit-overflow-scrolling: touch
+    -webkit-overflow-scrolling: touch;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -548,7 +548,7 @@ a:hover
         {
             padding-top: 8px;
             bottom: 0;
-            font-size: 8px;    
+            font-size: 6px;    
         }
     .videos-container {
             display: flex;
