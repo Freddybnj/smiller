@@ -721,11 +721,12 @@ a:hover
 
 .stopMotionHeader {
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center; 
     align-content: center;
     align-items: center;
-    margin-left: 50px;
+    margin-left: unset;
     color: white;
     font-size: 1.25rem;
     margin-top: 100px;
