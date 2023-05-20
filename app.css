@@ -413,6 +413,15 @@ a:hover
 /* IDs */
 
 /* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    @supports (-webkit-overflow-scrolling: touch) {
+      body {
+        background-image: url(path-to-background-image.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    }
+  }
 @media (max-width: 1405px) 
 {
     .navbar .links,
@@ -511,6 +520,7 @@ a:hover
     body 
         {
             height: 100vh;
+            
         }
 
     .name-header
