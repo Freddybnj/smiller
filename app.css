@@ -416,7 +416,7 @@ a:hover
 @media screen and (max-width: 768px) {
     @supports (-webkit-overflow-scrolling: touch) {
       body {
-        background-image: url(path-to-background-image.jpg);
+        background-image: url("imgs/pose-2-color-v5.jpeg");
         background-attachment: fixed;
         background-size: cover;
       }
