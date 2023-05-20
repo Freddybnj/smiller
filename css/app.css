@@ -1,0 +1,1018 @@
+/* All DEFAULTS */
+* 
+{ 
+    margin: 0 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ELEMENTS */
+html
+{
+    scroll-behavior: smooth;
+}
+body 
+{   
+    background-color: black;
+    background: url('../imgs/pose-2-color-v5.jpeg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+li
+{
+    list-style: none;    
+}
+
+a 
+{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover 
+{
+    color: #ab8fbc;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 1);
+}
+
+.arrowSet
+{
+    display: show;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-top: 5px;
+    color: rgba(255 255, 255, .3);
+}
+.arrowSet:hover
+{
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
+}
+
+.arrowHide
+{
+    display: none;
+}
+
+.puppet-div
+{
+    padding-top: 100px;
+}
+
+.footer
+{
+    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 12px;
+    margin-left: 0px;
+    background: #484071;
+    height: 45PX;
+    padding-right: 50px;
+}
+
+/* CLASSES */
+.footer p
+{   
+    color: rgba(255 255, 255, .3);
+    margin-left: 25px;
+    font-style: italic;
+}
+
+.navbar 
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;    
+    padding: 5px 5px; 
+    z-index: 1;
+}
+
+.navbar .logo a 
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.navbar .links 
+{
+    margin-top:20px;
+    display: flex;
+    margin-right: 50px;
+    gap: 4rem;       
+}
+
+.dots 
+{
+    margin-top: 12px;
+
+}
+
+.navbar .toggle_btn 
+{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    top: 5px;
+    display: none;
+
+}
+
+.action_btn 
+{
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius:20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action_btn:hover
+{
+    scale: 1.05;
+    color: purple;
+}
+
+.action_btn:active 
+{
+    scale: 0.95;
+}
+
+#brand-logo 
+{
+    width: 150px;
+    height: 70px;
+    border-radius:30%;
+}
+
+/* CLASSES - DROPDOWN MENU */
+.dropdown_menu 
+{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 65px;  
+    height: 0;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition:height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open
+{
+    height: 240px;
+}
+
+.dropdown_menu li 
+{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.name-header
+{   
+    margin-top: 300px;
+    margin-left: 200px;    
+    color: white;
+}
+
+.name
+{
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.title
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 50px;
+    
+}
+
+.about-me
+{
+    text-align: center;
+    line-height: 2rem;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    max-width: 500px;
+}
+.about-me-title 
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.about-me-paragraph 
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.about-phoenix
+{
+    text-align: center;
+    line-height: 2rem;
+    margin-top: 25px;
+    margin-left: 200px;
+    max-height: 800px;
+    max-width: 525px;    
+}
+.about-phoenix-title
+{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 180px;
+}
+.about-phoenix-paragraph 
+{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    min-width: 700px;
+}
+
+.video
+{
+    margin-top: 35px;;
+    margin-left: 200px;
+    max-height: 500px;
+    max-width: 750px;
+    margin-bottom: 0; 
+}
+
+.pic-div
+{
+    margin-left: 125px;
+}
+
+.pho-picture
+{
+    
+    max-height: 800px;  
+    max-width: 550px;
+}
+.pho-picture-sm
+{
+    margin-top: 40px;
+    margin-left: 150px;
+    max-height: 600px;  
+    max-width: 375px;
+}
+
+.main
+{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 10em;
+    max-width: 100%;
+    padding-top: 75px;
+    margin-top: 600px;
+    background-color: #2a1c3c;
+    color: white;
+    
+}
+
+.liveMotionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    color: white;
+    font-size: 3.25rem;
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+  .topStopMotionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 175px;
+    margin-bottom: 0px;
+  }
+  #coming-soon {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 5px;
+    margin-left: 200px;
+  }
+  #cs-title {
+    color: white;
+    font-size: 2.75rem;
+    margin-top: 25px;
+    margin-left: 200px;
+  }
+  #cs-par {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 75px;
+    padding-bottom: 25px;
+    margin-left: 200px;
+  }
+
+.videos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  .video-wrapper {
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .video-wrapper iframe {
+    width: 100%;
+    max-height: 400px;
+  }
+  .video-wrapper p {
+    color: white;
+    font-size: 2.0rem;
+  }
+  .stopMotionHeader {
+    display: flex;
+    justify-content: center; 
+    color: white;
+    font-size: 3.0rem;
+    margin-top: 150px;
+  }
+
+.main-videos
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-top: 75px;
+    margin-top: 100px;
+    background-color: #2a1c3c;
+    color: white;
+    
+}
+.main-videos p
+{
+    text-align: center;
+}
+
+.main-bottom
+{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 10em;
+    padding-top: 75px;
+    padding-bottom: 50px;    
+    background-color: #0b5351;
+    color: white;
+    
+}
+
+.navbar.scrolled {
+    background: #484071;
+    transition: background 500ms;
+}
+.footer.scrolled {
+    background: #484071;
+    transition: background 500ms;
+}
+
+/* IDs */
+
+/* RESPONSIVE DESIGN */
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .dropdown_menu 
+{
+    background-color: rgba(150, 149, 149, 0.9); /* Darken background color */
+    -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
+
+    backdrop-filter: blur(10px);
+}
+  }
+
+@media (max-width: 1405px) 
+{
+    .navbar .links,
+    .navbar .action_btn 
+    {
+        display: none;
+    }
+    .navbar .toggle_btn 
+    {
+        display: block;
+    }
+    .dropdown_menu 
+    {
+        display: block;
+    }
+    /* .video-wrapper p {
+        margin-top: 125px;
+        color: green;
+        font-size: 2.0rem;
+      } */
+}
+
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) {
+
+  /* CSS rules specific to iPad Portrait */
+}
+
+/* iPad Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) {
+    body 
+    {
+        height: 100vh;
+        
+    }
+
+.name-header
+    {   
+        margin-top: 300px;
+        margin-left: 5px;    
+        color: white;
+    }
+
+.name
+    {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+.title
+    {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-left: 5px;
+        
+    }
+
+.dropdown_menu 
+    {
+        margin-top: 20px;
+        left: 2rem;
+        width: unset;
+    }
+.footer p
+    {
+        padding-top: 8px;
+        bottom: 0;
+        font-size: 6px;    
+    }
+.videos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 415px;
+      }
+      
+      .video-wrapper {
+        /* flex-direction: row; */
+        margin: 0 20px;
+        text-align: center;
+      }
+      
+      .video-wrapper iframe {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        /* max-height: 400px; */
+      }
+      .video-wrapper p {
+        /* margin-top: 25%; */
+        padding-top: 0;
+        margin-top: 0;
+        color: white;
+        font-size: 2.0rem;
+      }
+      .stopMotionHeader {
+        display: flex;
+        justify-content: center; 
+        color: white;
+        font-size: 3.0rem;
+        margin-top: 150px;
+      }
+      #coming-soon {
+        color: white;
+        font-size: 2.5rem;
+        margin-top: 5px;
+        margin-left: unset;
+      }
+      #cs-title {
+        color: white;
+        font-size: 2.75rem;
+        margin-top: 25px;
+        margin-left: unset;
+      }
+      #cs-par {
+        color: white;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-top: 75px;
+        padding-bottom: 25px;
+        margin-left: unset;
+      }
+
+
+
+.main
+      {            
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;            
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 500px;
+        margin-left: 0;
+        padding-left: 0;
+        /* margin-left: 5px;
+        margin-right: 5px; */
+          background-color: #2a1c3c;
+          color: white;
+          margin-bottom: 0;
+          padding-bottom: 15px;
+          
+      }
+.video
+      {
+          margin-left: 0;
+          margin-right: 0;
+          padding-left: 0;
+          padding-right: 0;
+          margin-bottom: 50px; 
+      }
+
+
+.main-bottom
+      {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 100%;
+        margin-top: 0;
+        padding-top: 15px;
+        background-color: #0b5351;
+        color: white;              
+      }
+      
+.pic-div
+      { 
+          margin: 10px 15px;  
+          margin-top: 50px;            
+      }
+.pho-picture
+      {
+
+          max-height: 600px;  
+          max-width: 425px;
+      }
+.about-phoenix
+      {            
+            max-width: 100%;
+            padding: 0;
+            margin: 0;                 
+      }
+.about-phoenix-title
+      {
+          margin-left: 0;
+          font-size: 2.5rem;
+          font-weight: bold;
+      }
+.about-phoenix-paragraph 
+      {
+          margin-left: 25px;
+          margin-right: 25px;
+          padding-left: 0;
+          font-size: 1rem;
+          font-weight: bold;
+          max-width: 100%;
+          min-width: unset;
+      }
+
+.about-me
+{
+max-width: 100%;
+margin-left: 5px;
+margin-right: 5px;
+padding-left: 5px;
+padding-right: 5px;
+margin-bottom: 0;  
+padding-bottom: 0;
+padding-top: 0;
+
+
+}
+
+.about-me-title 
+{
+font-size: 3rem;
+font-weight: bold;
+text-align: center;
+padding-bottom: 25px;
+}
+.about-me-paragraph 
+{
+    margin-left: 25px;
+    margin-right: 25px;
+font-size: 1rem;
+font-weight: bold;
+padding-bottom: 0;
+margin-bottom: 0;
+color: white;
+}
+
+
+.pho-picture-sm
+{
+margin-top: 40px;
+margin-left: 25px;
+padding-right: 50px;
+margin-bottom: 150px;
+max-height: 100%;  
+max-width: 100%;
+
+}
+
+.stopMotionHeader {
+display: flex;
+text-align: center;
+flex-direction: column;
+justify-content: center; 
+align-content: center;
+align-items: center;
+margin-left: unset;
+color: white;
+font-size: 1.25rem;
+margin-top: 100px;
+margin-bottom: 50px;
+}
+.topStopMotionHeader {
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-content: center;
+align-items: center;
+margin-left: 0px;
+color: white;
+font-size: 3.5rem;
+margin-top: 175px;
+margin-bottom: 0px;
+}
+.liveMotionHeader {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: white;
+font-size: 3.5rem;
+margin-top: 175px;
+margin-bottom: 50px;
+}
+.extra-videos
+{
+margin-bottom: 50px;
+}
+
+    
+  /* CSS rules specific to iPad Landscape */
+}
+/* iPhone Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+  /* CSS rules specific to iPhone Portrait */
+}
+
+/* iPhone Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) {
+    .dropdown_menu 
+    {
+            background-color: rgba(255, 3, 3, 0.9); /* Darken background color */
+            -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
+        
+            backdrop-filter: blur(10px);
+    }
+
+    
+    
+
+  /* CSS rules specific to iPhone Landscape */
+}
+
+
+
+@media (max-width: 740px) 
+{
+    body 
+        {
+            height: 100vh;
+            
+        }
+
+    .name-header
+        {   
+            margin-top: 300px;
+            margin-left: 5px;    
+            color: white;
+        }
+
+    .name
+        {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+    .title
+        {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: 5px;
+            
+        }
+
+    .dropdown_menu 
+        {
+            margin-top: 20px;
+            left: 2rem;
+            width: unset;
+        }
+    .footer p
+        {
+            padding-top: 8px;
+            bottom: 0;
+            font-size: 6px;    
+        }
+    .videos-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+            margin-left: 15px;
+            margin-right: 15px;
+          }
+          
+          .video-wrapper {
+            /* flex-direction: row; */
+            margin: 0 20px;
+            text-align: center;
+          }
+          
+          .video-wrapper iframe {
+            width: 100%;
+            max-height: 400px;
+          }
+          .video-wrapper p {
+            margin-top: 25%;
+            color: white;
+            font-size: 2.0rem;
+          }
+          .stopMotionHeader {
+            display: flex;
+            justify-content: center; 
+            color: white;
+            font-size: 3.0rem;
+            margin-top: 150px;
+          }
+          #coming-soon {
+            color: white;
+            font-size: 2.5rem;
+            margin-top: 5px;
+            margin-left: unset;
+          }
+          #cs-title {
+            color: white;
+            font-size: 2.75rem;
+            margin-top: 25px;
+            margin-left: unset;
+          }
+          #cs-par {
+            color: white;
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-top: 75px;
+            padding-bottom: 25px;
+            margin-left: unset;
+          }
+
+
+
+.main
+          {            
+            display: flex;
+            flex-direction: column;
+            flex-flow: column-reverse;            
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-top: 500px;
+            margin-left: 0;
+            padding-left: 0;
+            /* margin-left: 5px;
+            margin-right: 5px; */
+              background-color: #2a1c3c;
+              color: white;
+              margin-bottom: 0;
+              padding-bottom: 15px;
+              
+          }
+.video
+          {
+              margin-left: 0;
+              margin-right: 0;
+              padding-left: 0;
+              padding-right: 0;
+              margin-bottom: 50px; 
+          }
+
+
+.main-bottom
+          {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            max-width: 100%;
+            margin-top: 0;
+            padding-top: 15px;
+            background-color: #0b5351;
+            color: white;              
+          }
+          
+.pic-div
+          { 
+              margin: 10px 15px;  
+              margin-top: 50px;            
+          }
+.pho-picture
+          {
+
+              max-height: 600px;  
+              max-width: 425px;
+          }
+.about-phoenix
+          {            
+                max-width: 100%;
+                padding: 0;
+                margin: 0;                 
+          }
+.about-phoenix-title
+          {
+              margin-left: 0;
+              font-size: 2.5rem;
+              font-weight: bold;
+          }
+.about-phoenix-paragraph 
+          {
+              margin-left: 0;
+              padding-left: 0;
+              font-size: 1rem;
+              font-weight: bold;
+              max-width: 400px;
+              min-width: unset;
+          }
+
+.about-me
+{
+    max-width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;  
+    padding-bottom: 0;
+    padding-top: 0;
+    
+
+}
+
+.about-me-title 
+{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.about-me-paragraph 
+{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+
+.pho-picture-sm
+{
+    margin-top: 40px;
+    max-height: 100%;  
+    max-width: 100%;
+    margin: 5px 5px;
+}
+
+.stopMotionHeader {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    margin-left: unset;
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+.topStopMotionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 175px;
+    margin-bottom: 0px;
+  }
+  .liveMotionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 175px;
+    margin-bottom: 50px;
+  }
+.extra-videos
+{
+    margin-bottom: 50px;
+}
+}
