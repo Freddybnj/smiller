@@ -15,7 +15,56 @@
         <!-- Custom CSS -->    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/app.css">
-
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            .row::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            .column {
+              float: left;
+              width: 50%;
+              padding: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .column-multi {
+              float: left;
+              width: 50%;
+              padding: 10px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+            
+            .img-responsive {
+              max-width: 100%;
+              max-height: 400px;
+            }
+            .imgandlabel
+            {
+                text-align: center;
+            }
+            .imgandlabel p
+            {
+                color:white;
+                font-size: 2.5rem; 
+            }
+            
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+              }
+            }
+          </style>
         <!-- Title -->
         <title>Production Design</title>
 
@@ -58,24 +107,143 @@
     <div class="container prodDesignDescription">
         <p>These are all short films I've done/helped with production design on.</p>
     </div>
-    <div class="container">
-        <h2 class = "prodDesignDescriptionTitle">Stupid Cupid (2024)</h2>
-        <h2 class = "prodDesignDescriptionPos">(Production designer)</h2>
+
+<div class="container">
+    <h2 class = "prodDesignDescriptionTitle">Stupid Cupid (2024)</h2>
+    <h2 class = "prodDesignDescriptionPos">(Production Designer)</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/stupid cupid 1 before.jpg" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/stupid cupid 1 after.jpg" alt="Image 2">
+                <p>After</p>
+            </div>          
+        </div>
     </div>
 </div>
 
+<div class="container">
+    <h2 class = "prodDesignDescriptionTitle">Gen Sex (2024)</h2>
+    <h2 class = "prodDesignDescriptionPos">(Production Designer)</h2>
+</div>
+<div class="container">
     <div class="row">
-            <div class = "column">
-                <img src="imgs/prod. design pics/stupid cupid 1 before.jpg" alt="Image 1">
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/gen sex 1 before.jpg" alt="Image 1">
                 <p>Before</p>
-            </div>   
-            <div class = "column">
-                <img src="imgs/prod. design pics/stupid cupid 1 after.jpg" alt="Image 2">
+            </div>
+        </div>
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/gen sex 1 after.jpg" alt="Image 2">
                 <p>After</p>
-            </div>            
+            </div>          
+        </div>
     </div>
+</div>
 
+<div class="container">
+    <h2 class = "prodDesignDescriptionTitle">The Resident (2024)</h2>
+    <h2 class = "prodDesignDescriptionPos">(Production Design Assistant)</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 1 before.JPEG" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 1.JPEG" alt="Image 2">
+                <p>After</p>
+            </div>          
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 2 before.JPG" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 2.JPEG" alt="Image 2">
+                <p>After</p>
+            </div>          
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 3 before.JPG" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/the resident 3 after.JPEG" alt="Image 2">
+                <p>After</p>
+            </div>          
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <h2 class = "prodDesignDescriptionTitle">What I'd Do For You (2023)</h2>
+    <h2 class = "prodDesignDescriptionPos">(Production Designer)</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column-multi">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/WIDFY 1 before.jpg" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column-multi" >
+            <div class = "image-container" id = "rotate-column">
+                <img class="img-responsive" src="imgs/prod. design pics/WIDFY 1 after.jpg" alt="Image 2">
+            </div>   
+            <div class="paragraph-container imgandlabel">            
+                <p>After</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class = "prodDesignDescriptionTitle">Dead Weight (2023)</h2>
+    <h2 class = "prodDesignDescriptionPos">(Production Design Assistant)</h2>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="column-multi">
+            <div class = "imgandlabel">
+                <img class="img-responsive" src="imgs/prod. design pics/dead weight 2 before.jpg" alt="Image 1">
+                <p>Before</p>
+            </div>
+        </div>
+        <div class="column-multi" >
+            <div class = "image-container" id = "rotate-column-2">
+                <img class="img-responsive" src="imgs/prod. design pics/Dead weight 1 after.jpg" alt="Image 2">
+            </div>   
+            <div class="paragraph-container imgandlabel">
+                <p>After</p>
+            </div>
+        </div>
+    </div>
+</div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -84,6 +252,62 @@
             crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
             crossorigin="anonymous"></script>
+            <script>
+                // Rotate images through a click
+                const rotateColumn = document.getElementById('rotate-column');
+                const paragraphs = [ document.querySelector('.column:nth-child(1) .paragraph-container p')];
+                const rotateColumn2 = document.getElementById('rotate-column-2');
+                const paragraphs2 = [ document.querySelector('.column:nth-child(1) .paragraph-container p')];
+                const images = ['imgs/prod. design pics/WIDFY 1 after.jpg', 'imgs/prod. design pics/WIDFY 2 after.jpg']; // Add more image paths if needed
+                const images2 = ['imgs/prod. design pics/Dead weight 1 after.jpg', 'imgs/prod. design pics/dead weight 2 after.jpg', 'imgs/prod. design pics/dead weight 3 after.jpg', 'imgs/prod. design pics/dead weight 4 after.jpg']; // Add more image paths if needed
+                let currentImageIndex = 0;
+                let currentImageIndex2 = 0;
+                let parVar = "After";
+            
+                rotateColumn.addEventListener('click', () => {
+                  currentImageIndex = (currentImageIndex + 1) % images.length;
+                  rotateColumn.innerHTML = `<img class="img-responsive" src="${images[currentImageIndex]}" alt="Rotating Image">`;
+                });
+                rotateColumn2.addEventListener('click', () => {
+                  currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+                  rotateColumn2.innerHTML = `<img class="img-responsive" src="${images2[currentImageIndex2]}" alt="Rotating Image">`;
+                  rotateColumnPar2.innerHTML = `<p>After</p>`;
+                });
+            
+                // Rotate images automatically with a timer
+                const timerInterval = 2000; // Change the interval duration (in milliseconds) as desired
+                const timerInterval2 = 2500; // Change the interval duration (in milliseconds) as desired
+                let timer;
+                let timer2;
+            
+                function startTimer() {
+                  timer = setInterval(() => {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    rotateColumn.innerHTML = `<img class="img-responsive" src="${images[currentImageIndex]}" alt="Rotating Image">`;
+                  }, timerInterval);
+                }
+                function startTimer2() {
+                  timer = setInterval(() => {
+                    currentImageIndex2 = (currentImageIndex2 + 1) % images2.length;
+                    rotateColumn2.innerHTML = `<img class="img-responsive" src="${images2[currentImageIndex2]}" alt="Rotating Image">`;
+                    rotateColumnPar2.innerHTML = `<p>After</p>`;
+                  }, timerInterval2);
+                }
+            
+                function stopTimer() {
+                  clearInterval(timer);
+                }
+            
+                // Uncomment the following lines to start the timer automatically
+                startTimer();
+                startTimer2();
+            
+                // Uncomment the following lines to stop the timer after a specific duration (e.g., 10 seconds)
+                // setTimeout(() => {
+                //   stopTimer();
+                // }, 10000);
+              </script>
+        
         <script>
             const toggleBtn = document.querySelector('.toggle_btn');
             const toggleBtnIcon = document.querySelector('.toggle_btn i');
