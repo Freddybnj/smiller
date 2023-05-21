@@ -87,10 +87,7 @@ Having grown up reading series such as the Chronicles of Narnia, Maximum Ride, a
         With this story, I'm interested in posing a question: Is it worth weighing your true identity and sense of freedom against your relationship with your loved ones and acceptance from society as a whole? And what does it really mean to belong?
     </p>
 </div>
-</div>
-    
-            <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+</div> 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -122,21 +119,12 @@ Having grown up reading series such as the Chronicles of Narnia, Maximum Ride, a
         </script>
 
         <script>
-            // let scrollpos = window.scrollY
-            // const arrow = document.querySelector("#arrow");
-          
-            // const add_class_on_scroll = () => arrow.classList.add("arrowShow");
             const remove_class_on_scroll = () => arrow.classList.remove("arrowhide")
           
             window.addEventListener('scroll', function() { 
-                // const add_class_on_scroll = () => arrow.classList.add("arrowHide");
-                // const remove_class_on_scroll = () => arrow.classList.remove("arrowHide")
                 let scrollpos = window.scrollY;
-                const arrow = document.querySelector("#arrow");
-          
-              if (scrollpos > 1504) { remove_class_on_scroll()}
-            //   else { add_class_on_scroll() }
-          
+                const arrow = document.querySelector("#arrow");          
+              if (scrollpos > 1504) { remove_class_on_scroll()}          
               console.log(scrollpos)
               console.log(arrow.classList)
             })
@@ -146,7 +134,6 @@ Having grown up reading series such as the Chronicles of Narnia, Maximum Ride, a
             {
                 window.scrollTo(0, 0);
             }
-
           </script>
 
     <div class = "container-fluid footer">       
