@@ -18,29 +18,7 @@
 
         <!-- Title -->
         <title>Production Design</title>
-        <style>
-            /* CSS for responsive layout */
-            .row {
-              display: flex;
-              flex-wrap: wrap;
-            }
-        
-            .column {
-              flex-basis: 50%;
-              padding: 10px;
-            }
-        
-            /* CSS for image and label */
-            .image {
-              max-width: 100%;
-              height: auto;
-            }
-        
-            .label {
-              text-align: center;
-              margin-top: 10px;
-            }
-          </style>
+
     </head>
 
     <body>    
@@ -74,18 +52,28 @@
                 </div> 
             </div>     
         </nav> 
-<div class="container">
-        <div class="row">
-            <div class="column">
-              <img class="image" src="image1.jpg" alt="Image 1">
-              <div class="label">Label 1</div>
-            </div>
-            <div class="column">
-              <img class="image" src="image2.jpg" alt="Image 2">
-              <div class="label">Label 2</div>
-            </div>
-          </div>
+
+<div class="container-fluid">
+    <h1 class = "topStopMotionHeader">Production Design</h1>
+    <div class="container prodDesignDescription">
+        <p>These are all short films I've done/helped with production design on.</p>
+    </div>
+    <div class="container">
+        <h2 class = "prodDesignDescriptionTitle">Stupid Cupid (2024)</h2>
+        <h2 class = "prodDesignDescriptionPos">(Production designer)</h2>
+    </div>
 </div>
+
+    <div class="row">
+            <div class = "column">
+                <img src="imgs/prod. design pics/stupid cupid 1 before.jpg" alt="Image 1">
+                <p>Before</p>
+            </div>   
+            <div class = "column">
+                <img src="imgs/prod. design pics/stupid cupid 1 after.jpg" alt="Image 2">
+                <p>After</p>
+            </div>            
+    </div>
 
 
         <!-- Optional JavaScript -->
@@ -119,7 +107,11 @@
         </script>
     </body>
     
-    <div class = "footer">       
+    <div class = "container-fluid footer">       
         <p>Copyright © 2023 Shannon Miller Films - All Rights Reserved.</p>
-    </div> 
+        <span id = "arrow">
+            <button class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow btn bg-transparent arrowSet"  onclick="window.scrollTo(0, 0)">                
+            </button>            
+        </span>
+    </div>
 </html>
