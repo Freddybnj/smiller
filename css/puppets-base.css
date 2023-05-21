@@ -9,9 +9,12 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 0;
+}
+
 .container {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 150px;
 }
