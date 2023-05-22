@@ -71,6 +71,14 @@ a:hover
     padding: 0;
 }
 
+.basicImg
+{
+    aspect-ratio: 1;
+
+}
+
+.zoomedImg
+
 .puppet-div
 {
     padding-top: 5px;

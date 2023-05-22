@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for the image gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin: 5px;
+      cursor: pointer;
+    }
+    
+    /* CSS for the modal */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .modal-content {
+      display: block;
+      margin: 10% auto;
+      max-width: 700px;
+    }
+    
+    .modal-content img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="imgs/Prop pics/IMG_2716.jpg" onclick="openModal('imgs/Prop pics/IMG_2716.jpg')" alt="Image 1">
+    <img src="imgs/Prop pics/IMG_2976.jpg" onclick="openModal('imgs/Prop pics/IMG_2976.jpg')" alt="Image 2">
+    <img src="imgs/Prop pics/IMG_4302.jpg" onclick="openModal('imgs/Prop pics/IMG_4302.jpg')" alt="Image 3">
+    <!-- Add more images here -->
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    // JavaScript functions
+    function openModal(imageSrc) {
+      var modal = document.getElementById("modal");
+      var modalImage = document.getElementById("modal-image");
+      modal.style.display = "block";
+      modalImage.src = imageSrc;
+    }
+  
+    function closeModal() {
+      var modal = document.getElementById("modal");
+      modal.style.display = "none";
+    }
+  
+    // Close the modal when clicked outside the image
+    window.onclick = function(event) {
+      var modal = document.getElementById("modal");
+      if (event.target == modal) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>
