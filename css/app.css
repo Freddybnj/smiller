@@ -343,6 +343,18 @@ a:hover
     margin-top: 100px;
     margin-bottom: 0px;
   }
+  .topProductionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    margin-left: 0px;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
   .topPuppetHeader {
     display: flex;
     flex-direction: column;
@@ -1057,6 +1069,19 @@ margin-bottom: 50px;
     margin-top: 175px;
     margin-bottom: 0px;
   }
+  .topProductionHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-content: center;
+    align-items: center;
+    margin-left: 80px;
+    color: white;
+    font-size: 3.5rem;
+    margin-top: 100px;
+    margin-bottom: 0px;
+  }
+
   .liveMotionHeader {
     display: flex;
     flex-direction: column;
@@ -1070,4 +1095,28 @@ margin-bottom: 50px;
 {
     margin-bottom: 50px;
 }
+.prodDesignDescription {
+    display: flex;
+    flex-direction: block;
+    justify-content: center; 
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+  .prodDesignDescriptionTitle {
+    display: flex;
+    flex-direction: block;
+    justify-content: center; 
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 100px;
+  }
+  .prodDesignDescriptionPos {
+    display: flex;
+    flex-direction: block;
+    justify-content: center; 
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
 }
