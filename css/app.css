@@ -121,7 +121,7 @@ a:hover
 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .navbar .links 
@@ -145,6 +145,7 @@ a:hover
     cursor: pointer;
     top: 5px;
     display: none;
+    margin-right: 10px;
 
 }
 
@@ -198,7 +199,7 @@ a:hover
 
 .dropdown_menu.open
 {
-    height: 240px;
+    height: 275px;
 }
 
 .dropdown_menu li 
@@ -822,23 +823,23 @@ margin-bottom: 50px;
 
     .name-header
         {   
-            margin-top: 300px;
-            margin-left: 5px;    
+            margin-top: 275px;
+            margin-left: 35px;    
             color: white;
         }
 
     .name
         {
-            font-size: 1.75rem;
+            font-size: 1rem;
             font-weight: bold;
             margin-bottom: 0;
         }
 
     .title
         {
-            font-size: 1rem;
+            font-size: .5rem;
             font-weight: bold;
-            margin-left: 5px;
+            margin-left: 10px;
             
         }
 
@@ -935,6 +936,7 @@ margin-bottom: 50px;
               padding-left: 0;
               padding-right: 0;
               margin-bottom: 50px; 
+              max-width: 350px;
           }
 
 
@@ -965,11 +967,11 @@ margin-bottom: 50px;
           {
 
               max-height: 600px;  
-              max-width: 425px;
+              max-width: 350px;
           }
 .about-phoenix
           {            
-                max-width: 100%;
+            max-width: 350px;
                 padding: 0;
                 margin: 0;                 
           }
@@ -987,16 +989,17 @@ margin-bottom: 50px;
               font-weight: bold;
               max-width: 400px;
               min-width: unset;
+              line-height: 1.75;
           }
 
 .about-me
 {
-    max-width: 100%;
+    max-width: 350px;
     margin-left: 5px;
     margin-right: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-bottom: 0;  
+    margin-bottom: 50px;  
     padding-bottom: 0;
     padding-top: 0;
     
@@ -1017,6 +1020,7 @@ margin-bottom: 50px;
     padding-bottom: 0;
     margin-bottom: 0;
     color: white;
+    line-height: 1.75;
 }
 
 
