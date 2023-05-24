@@ -85,7 +85,7 @@
         </div>
         <div class="column-multi">
             <div class = "image-container" id = "rotate-column">
-                <img class="img-responsive" src="imgs/stop motion pic/house_1.7.1.jpg" alt="Image 2">        
+                <img class="img-responsive" src="imgs/stop motion pic/house_1.7.1_r.jpg" alt="Image 2">        
             </div>
         </div>
     </div>
@@ -171,7 +171,7 @@
     const paragraphs = [ document.querySelector('.column:nth-child(1) .paragraph-container p')];
     const rotateColumn2 = document.getElementById('rotate-column-2');
     const paragraphs2 = [ document.querySelector('.column:nth-child(1) .paragraph-container p')];
-    const images = ['imgs/stop motion pic/house_1.7.1.jpg', 'imgs/stop motion pic/Mai wwindow_1.5.1.jpg', 'imgs/stop motion pic/Mai book_1.20.1.jpg']; // Add more image paths if needed
+    const images = ['imgs/stop motion pic/house_1.7.1_r.jpg', 'imgs/stop motion pic/Mai wwindow_1.5.1._rjpg', 'imgs/stop motion pic/Mai book_1.20.1._rjpg']; // Add more image paths if needed
     let currentImageIndex = 0;
 
     rotateColumn.addEventListener('click', () => {
@@ -180,7 +180,7 @@
     });
 
     // Rotate images automatically with a timer
-    const timerInterval = 2000; // Change the interval duration (in milliseconds) as desired
+    const timerInterval = 500; // Change the interval duration (in milliseconds) as desired
     let timer;
 
     function startTimer() {
