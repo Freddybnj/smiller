@@ -1,4 +1,3 @@
-/* All DEFAULTS */
 * 
 { 
     margin: 0 0;
@@ -7,7 +6,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* ELEMENTS */
 html
 {
     scroll-behavior: smooth;
@@ -100,7 +98,6 @@ a:hover
     margin-top: 25px;    
 }
 
-/* CLASSES */
 .footer p
 {   
     color: rgba(255 255, 255, .3);
@@ -183,7 +180,6 @@ a:hover
     border-radius:30%;
 }
 
-/* CLASSES - DROPDOWN MENU */
 .dropdown_menu 
 {
     display: none;
