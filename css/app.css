@@ -260,6 +260,9 @@ a:hover
     font-size: 1.5rem;
     font-weight: bold;
 }
+.about-me-video{
+  padding-top: 45px;
+}
 .about-phoenix
 {
     text-align: center;
@@ -274,6 +277,7 @@ a:hover
     font-size: 3rem;
     font-weight: bold;
     margin-left: 180px;
+    padding-top: 25px;
 }
 .about-phoenix-paragraph 
 {
