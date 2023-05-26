@@ -243,10 +243,15 @@ a:hover
 
 .about-me
 {
+  padding: 25px;
+  margin: 25px;
+  justify-content: center;
     text-align: center;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    max-width: 700px;
+    flex: 1;
+    /* margin-left: 50px;
+    margin-bottom: 50px; */
+    max-width: auto;
+
 }
 .about-me-title 
 {
@@ -264,7 +269,7 @@ a:hover
     text-align: center;
     line-height: 2rem;
     margin-top: 25px;
-    margin-left: 200px;
+    margin-left: 350px;
     max-height: 800px;
     max-width: 525px;    
 }
@@ -282,14 +287,45 @@ a:hover
     line-height: 2rem;
     min-width: 700px;
 }
+.main
+{
+    display: flex;
+    padding-left:  50px;
+    margin-top: 600px;
+    background-color: #2a1c3c;
+    color: white;    
+}
+.main2
+{
+    display: flex;
+    padding-left:  50px;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+    background-color: #0b5351;
+    color: white;
+    margin-bottom: 25px;
+}
+
+video-main{
+  justify-content: center;
+  max-height: 500px;
+  max-width: 750px;
+  flex: 1;  
+}
+.vid-iframe {
+  width: 640px; 
+  height: 360px;
+  margin-top: 25px; 
+}
 
 .video
 {
-    margin-top: 100px;;
+  justify-content: center;
+    /* margin-top: 100px;;
     margin-left: 200px;
     max-height: 500px;
     max-width: 750px;
-    margin-bottom: 0; 
+    margin-bottom: 0;  */
 }
 
 .pic-div
@@ -311,18 +347,7 @@ a:hover
     max-width: 375px;
 }
 
-.main
-{
-    display: grid;
-    grid-template-columns: 35% 65%;
-    gap: 10em;
-    max-width: 100%;
-    padding-top: 75px;
-    margin-top: 600px;
-    background-color: #2a1c3c;
-    color: white;
-    
-}
+
 
 .liveMotionHeader {
     display: flex;
@@ -424,7 +449,7 @@ a:hover
   }
   
   .video-wrapper {
-    margin: 0 20px;
+    margin: 0 200px;
     text-align: center;
   }
   
@@ -943,6 +968,12 @@ margin-bottom: 50px;
               padding-bottom: 15px;
               
           }
+          .vid-iframe {
+            width: 275px; 
+            height: auto;
+            margin-top: 25px; 
+            padding: 0;
+          }
 .video
           {
               margin-left: 0;
@@ -954,7 +985,7 @@ margin-bottom: 50px;
           }
 
 
-.main-bottom
+.main2
           {
             display: flex;
             flex-direction: column;
@@ -987,7 +1018,8 @@ margin-bottom: 50px;
           {            
             max-width: 350px;
                 padding: 0;
-                margin: 0;                 
+                margin: 0;    
+                margin-top: 25px;             
           }
 .about-phoenix-title
           {
@@ -1036,20 +1068,7 @@ margin-bottom: 50px;
     color: white;
     line-height: 1.75;
 }
-/* .column-multi {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /* height: 0; */
-  padding-top: 0;
-  width: 100%;
-  padding-bottom: 100px;
-} */
+
 
 
 .pho-picture-sm
