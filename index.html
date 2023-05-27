@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -58,7 +59,7 @@
     <div class = "name-header" >             
         <p class = "name">Shannon Miller</p>
         <p class = "title">Screenwriter, Filmmaker</p>
-</div>
+    </div>
 
     <div class = "main container-fluid">
         <div class = "about-me">
@@ -73,12 +74,12 @@
         </div>        
     </div>  
 
-
     <div class = "main2 container-fluid">
         <div class = "pic-div">
             <img src="imgs/Phoenix_Poster_Yellow.jpg" alt="" class = "pho-picture picture-responsive"> 
-        </div>             
-            <div class="about-phoenix">
+        </div> 
+                
+        <div class="about-phoenix">
                 <P class = "about-phoenix-title">About Phoenix</P>
                 <p class = "about-phoenix-paragraph">
                     Phoenix is a stopmotion fantasy short film about a teenage witch named Mai. Having grown up in a religious rural town and strict family, Mai has always been taught that witchcraft was the worst evil of all. When the beloved family cow, Daisy, falls ill and passes away, Mai can't help but intervene, even if it runs the risk of exposing her secret and getting her disowned.
@@ -87,7 +88,7 @@
                     
                     With this story, I'm interested in posing a question: Is it worth weighing your true identity and sense of freedom against your relationship with your loved ones and acceptance from society as a whole? And what does it really mean to belong?
                 </p>
-            </div>     
+        </div>     
     </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -112,31 +113,36 @@
         </script>
 
         <script>
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $("#mainNavbar");
-                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());                
-                });
+            $(function () 
+            {
+                $(document).scroll(function () 
+                    {
+                        var $nav = $("#mainNavbar");
+                        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());                
+                    });
             });
         </script>
 
         <script>
             const remove_class_on_scroll = () => arrow.classList.remove("arrowhide")
           
-            window.addEventListener('scroll', function() { 
+            window.addEventListener('scroll', function() 
+            { 
                 let scrollpos = window.scrollY;
                 const arrow = document.querySelector("#arrow");          
-              if (scrollpos > 1504) { remove_class_on_scroll()}          
-              console.log(scrollpos)
-              console.log(arrow.classList)
-            })
-          </script>
-          <script>
+                if (scrollpos > 1504) 
+                    {
+                    remove_class_on_scroll()
+                    }        
+            });            
+        </script>
+
+        <script>
             function scroll () 
             {
                 window.scrollTo(0, 0);
             }
-          </script>
+        </script>
 
     <div class = "container-fluid footer">       
         <p>Copyright © 2023 Shannon Miller Films - All Rights Reserved.</p>
@@ -145,5 +151,5 @@
             </button>            
         </span>
     </div>
-    </body>
+</body>
 </html>

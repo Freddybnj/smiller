@@ -1,7 +1,5 @@
 * 
 { 
-    margin: 0 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
@@ -10,6 +8,7 @@ html
 {
     scroll-behavior: smooth;
 }
+
 body 
 {   
     background-color: black;
@@ -19,8 +18,7 @@ body
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 
 li
@@ -54,6 +52,12 @@ a:hover
     margin-top: 5px;
     color: rgba(255 255, 255, .3);
 }
+
+.arrowHide
+{
+    display: none;
+}
+
 .arrowSet:hover
 {
     -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
@@ -61,28 +65,17 @@ a:hover
     box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
 }
 
-.arrowHide
-{
-    display: none;
-}
-
-.container-fluid
-{
-    padding: 0;
-}
-
-.basicImg
+/* .basicImg
 {
     aspect-ratio: 1;
 
-}
+} */
 
-.zoomedImg
-
-.puppet-div
+/* .puppet-div
 {
     padding-top: 5px;
-}
+} */
+
 
 .footer
 {
@@ -215,6 +208,9 @@ a:hover
     justify-content: center;
 }
 
+
+
+
 .name-header
 {   
     margin-top: 300px;
@@ -237,6 +233,15 @@ a:hover
     
 }
 
+.main
+{
+    display: flex;
+    padding-left:  50px;
+    margin-top: 600px;
+    background-color: #2a1c3c;
+    color: white;    
+}
+
 .about-me
 {
   padding: 25px;
@@ -244,25 +249,35 @@ a:hover
   justify-content: center;
     text-align: center;
     flex: 1;
-    /* margin-left: 50px;
-    margin-bottom: 50px; */
-    max-width: auto;
-
 }
+
 .about-me-title 
 {
     font-size: 2.5rem;
     font-weight: bold;
 }
+
 .about-me-paragraph 
 {
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
+
 .about-me-video{
-  padding-top: 45px;
+  padding-top: 80px;
 }
+
+.main2
+{
+    display: flex;
+    padding-left:  50px;
+    padding-top: 100px;
+    background-color: #0b5351;
+    color: white;
+    margin-bottom: 25px;
+}
+
 .about-phoenix
 {
     text-align: center;
@@ -287,26 +302,11 @@ a:hover
     line-height: 2rem;
     min-width: 700px;
 }
-.main
-{
-    display: flex;
-    padding-left:  50px;
-    margin-top: 600px;
-    background-color: #2a1c3c;
-    color: white;    
-}
-.main2
-{
-    display: flex;
-    padding-left:  50px;
-    /* margin-top: 100px; */
-    padding-top: 100px;
-    background-color: #0b5351;
-    color: white;
-    margin-bottom: 25px;
-}
 
-video-main{
+
+/* I've checked thru this far in css and html */
+
+.video-main{
   justify-content: center;
   max-height: 500px;
   max-width: 750px;
@@ -510,15 +510,6 @@ video-main{
 /* IDs */
 
 /* RESPONSIVE DESIGN */
-@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
-    .dropdown_menu 
-{
-    background-color: rgba(150, 149, 149, 0.9); /* Darken background color */
-    -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
-
-    backdrop-filter: blur(10px);
-}
-  }
 
 @media (max-width: 1405px) 
 {
@@ -541,317 +532,6 @@ video-main{
         font-size: 2.0rem;
       } */
 }
-
-/* iPad Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px)
-  and (orientation: portrait) {
-
-  /* CSS rules specific to iPad Portrait */
-}
-
-/* iPad Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px)
-  and (orientation: landscape) {
-    body 
-    {
-        height: 100vh;
-        
-    }
-
-.name-header
-    {   
-        margin-top: 300px;
-        margin-left: 5px;    
-        color: white;
-    }
-
-.name
-    {
-        font-size: 1.75rem;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-
-.title
-    {
-        font-size: 1rem;
-        font-weight: bold;
-        margin-left: 5px;
-        
-    }
-
-.dropdown_menu 
-    {
-        margin-top: 20px;
-        left: 2rem;
-        width: unset;
-    }
-.footer p
-    {
-        padding-top: 8px;
-        bottom: 0;
-        font-size: 7px;    
-    }
-.videos-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 25px;
-        margin-left: 15px;
-        margin-right: 15px;
-        padding-top: 415px;
-      }
-      
-      .video-wrapper {
-        /* flex-direction: row; */
-        margin: 0 20px;
-        text-align: center;
-      }
-      
-      .video-wrapper iframe {
-        width: 100%;
-        height: 100%;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        /* max-height: 400px; */
-      }
-      .video-wrapper p {
-        /* margin-top: 25%; */
-        padding-top: 0;
-        margin-top: 0;
-        color: white;
-        font-size: 2.0rem;
-      }
-      .stopMotionHeader {
-        display: flex;
-        justify-content: center; 
-        color: white;
-        font-size: 3.0rem;
-        margin-top: 150px;
-      }
-      #coming-soon {
-        color: white;
-        font-size: 2.5rem;
-        margin-top: 5px;
-        margin-left: unset;
-      }
-      #cs-title {
-        color: white;
-        font-size: 2.75rem;
-        margin-top: 25px;
-        margin-left: unset;
-      }
-      #cs-par {
-        color: white;
-        font-size: 1.5rem;
-        line-height: 2.5rem;
-        margin-top: 75px;
-        padding-bottom: 25px;
-        margin-left: unset;
-      }
-
-
-
-.main
-      {            
-        display: flex;
-        flex-direction: column;
-        flex-flow: column-reverse;            
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-top: 500px;
-        margin-left: 0;
-        padding-left: 0;
-        /* margin-left: 5px;
-        margin-right: 5px; */
-          background-color: #2a1c3c;
-          color: white;
-          margin-bottom: 0;
-          padding-bottom: 15px;
-          
-      }
-.video
-      {
-          margin-left: 0;
-          margin-right: 0;
-          padding-left: 0;
-          padding-right: 0;
-          margin-bottom: 50px; 
-      }
-
-
-.main-bottom
-      {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 0;
-        padding-right: 0;
-        max-width: 100%;
-        margin-top: 0;
-        padding-top: 15px;
-        background-color: #0b5351;
-        color: white;              
-      }
-      
-.pic-div
-      { 
-          margin: 10px 15px;  
-          margin-top: 50px;            
-      }
-.pho-picture
-      {
-
-          max-height: 600px;  
-          max-width: 425px;
-      }
-.about-phoenix
-      {            
-            max-width: 100%;
-            padding: 0;
-            margin: 0;                 
-      }
-.about-phoenix-title
-      {
-          margin-left: 0;
-          font-size: 2.5rem;
-          font-weight: bold;
-      }
-.about-phoenix-paragraph 
-      {
-          margin-left: 25px;
-          margin-right: 25px;
-          padding-left: 0;
-          font-size: 1rem;
-          font-weight: bold;
-          max-width: 100%;
-          min-width: unset;
-      }
-
-.about-me
-{
-max-width: 100%;
-margin-left: 5px;
-margin-right: 5px;
-padding-left: 5px;
-padding-right: 5px;
-margin-bottom: 0;  
-padding-bottom: 0;
-padding-top: 0;
-
-
-}
-
-.about-me-title 
-{
-font-size: 3rem;
-font-weight: bold;
-text-align: center;
-padding-bottom: 25px;
-}
-.about-me-paragraph 
-{
-    margin-left: 25px;
-    margin-right: 25px;
-font-size: 1rem;
-font-weight: bold;
-padding-bottom: 0;
-margin-bottom: 0;
-color: white;
-}
-
-
-.pho-picture-sm
-{
-margin-top: 40px;
-margin-left: 25px;
-padding-right: 50px;
-margin-bottom: 150px;
-max-height: 100%;  
-max-width: 100%;
-
-}
-
-.stopMotionHeader {
-display: flex;
-text-align: center;
-flex-direction: column;
-justify-content: center; 
-align-content: center;
-align-items: center;
-margin-left: unset;
-color: white;
-font-size: 1.25rem;
-margin-top: 100px;
-margin-bottom: 50px;
-}
-.topStopMotionHeader {
-display: flex;
-flex-direction: column;
-justify-content: center; 
-align-content: center;
-align-items: center;
-margin-left: 0px;
-color: white;
-font-size: 3.5rem;
-margin-top: 175px;
-margin-bottom: 0px;
-}
-.liveMotionHeader {
-display: flex;
-flex-direction: column;
-align-items: center;
-color: white;
-font-size: 3.5rem;
-margin-top: 175px;
-margin-bottom: 50px;
-}
-.extra-videos
-{
-margin-bottom: 50px;
-}
-
-    
-  /* CSS rules specific to iPad Landscape */
-}
-/* iPhone Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (orientation: portrait) {
-  /* CSS rules specific to iPhone Portrait */
-}
-
-/* iPhone Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (orientation: landscape) {
-    .dropdown_menu 
-    {
-            background-color: rgba(255, 3, 3, 0.9); /* Darken background color */
-            -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
-        
-            backdrop-filter: blur(10px);
-    }
-
-    
-    
-
-  /* CSS rules specific to iPhone Landscape */
-}
-
-
 
 @media (max-width: 740px) 
 {
@@ -948,8 +628,6 @@ margin-bottom: 50px;
             margin-left: unset;
           }
 
-
-
 .main
           {            
             display: flex;
@@ -975,6 +653,7 @@ margin-bottom: 50px;
             margin-top: 25px; 
             padding: 0;
           }
+
 .video
           {
               margin-left: 0;
@@ -1003,18 +682,20 @@ margin-bottom: 50px;
             background-color: #0b5351;
             color: white;              
           }
-          
+
 .pic-div
           { 
               margin: 10px 15px;  
               margin-top: 50px;            
           }
+
 .pho-picture
           {
 
               max-height: 600px;  
               max-width: 350px;
           }
+
 .about-phoenix
           {            
             max-width: 350px;
@@ -1022,12 +703,14 @@ margin-bottom: 50px;
                 margin: 0;    
                 margin-top: 25px;             
           }
+
 .about-phoenix-title
           {
               margin-left: 0;
               font-size: 2.5rem;
               font-weight: bold;
           }
+
 .about-phoenix-paragraph 
           {
               margin-left: 0;
@@ -1050,7 +733,6 @@ margin-bottom: 50px;
     padding-bottom: 0;
     padding-top: 0;
     
-
 }
 
 .about-me-title 
@@ -1060,6 +742,7 @@ margin-bottom: 50px;
     text-align: center;
     padding-bottom: 25px;
 }
+
 .about-me-paragraph 
 {
     font-size: 1rem;
@@ -1069,8 +752,6 @@ margin-bottom: 50px;
     color: white;
     line-height: 1.75;
 }
-
-
 
 .pho-picture-sm
 {
@@ -1093,6 +774,7 @@ margin-bottom: 50px;
     margin-top: 100px;
     margin-bottom: 50px;
   }
+
 .topStopMotionHeader {
     display: flex;
     flex-direction: column;
@@ -1105,7 +787,8 @@ margin-bottom: 50px;
     margin-top: 175px;
     margin-bottom: 0px;
   }
-  .topProductionHeader {
+
+.topProductionHeader {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -1118,7 +801,7 @@ margin-bottom: 50px;
     margin-bottom: 0px;
   }
 
-  .liveMotionHeader {
+.liveMotionHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1127,10 +810,12 @@ margin-bottom: 50px;
     margin-top: 175px;
     margin-bottom: 50px;
   }
+
 .extra-videos
 {
     margin-bottom: 50px;
 }
+
 .prodDesignDescription {
     display: flex;
     flex-direction: block;
@@ -1139,7 +824,8 @@ margin-bottom: 50px;
     font-size: 1.5rem;
     margin-top: 50px;
   }
-  .prodDesignDescriptionTitle {
+
+.prodDesignDescriptionTitle {
     display: flex;
     flex-direction: block;
     justify-content: center; 
@@ -1147,7 +833,8 @@ margin-bottom: 50px;
     font-size: 1.5rem;
     margin-top: 100px;
   }
-  .prodDesignDescriptionPos {
+
+.prodDesignDescriptionPos {
     display: flex;
     flex-direction: block;
     justify-content: center; 
@@ -1155,7 +842,59 @@ margin-bottom: 50px;
     font-size: 1.5rem;
     margin-bottom: 50px;
   }
-  img-res-sm{
+
+.img-res-sm{
     margin-bottom: 50px;
   }
+
 }
+
+
+
+/** Apple devices blur affect **/
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+  .dropdown_menu 
+  { 
+    background-color: rgba(150, 149, 149, 0.9); /* Darken background color */
+    -webkit-backdrop-filter: blur(10px); /* Apply blur effect */
+
+    backdrop-filter: blur(10px);
+  }
+}
+
+/** Responsive Design for Apple devices **/
+
+/* iPhone Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: portrait) {
+/* CSS rules specific to iPhone Portrait */
+}
+
+/* iPhone Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (orientation: landscape) {
+
+/* CSS rules specific to iPhone Landscape */
+}
+
+/* iPad Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait) {
+
+/* CSS rules specific to iPad Portrait */
+}
+
+/* iPad Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: landscape) {
+
+/* CSS rules specific to iPad Landscape */
+}    
