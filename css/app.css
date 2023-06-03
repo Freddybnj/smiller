@@ -335,7 +335,7 @@ a:hover {
   color: white;
   font-size: 3.5rem;
   margin-top: 100px;
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .topProductionHeader {
@@ -397,6 +397,7 @@ a:hover {
   font-size: 2.5rem;
   margin-top: 5px;
   margin-left: 200px;
+  text-align: center;
 }
 
 #cs-title {
@@ -417,17 +418,20 @@ a:hover {
 
 .videos-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 20px 20px;
+  margin: 10px;
 }
 
-.video-wrapper {
-  margin: 0;
-  text-align: center;
-}
+.video-wrapper {}
 
-.video-wrapper iframe {}
+.video-wrapper iframe {
+  display: block;
+  justify-content: center;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .video-wrapper p {
   color: white;
@@ -735,6 +739,7 @@ a:hover {
     margin-bottom: 50px;
   }
 
+  /* 
   .topStopMotionHeader {
     display: flex;
     flex-direction: column;
@@ -746,7 +751,7 @@ a:hover {
     font-size: 3.5rem;
     margin-top: 175px;
     margin-bottom: 0px;
-  }
+  } */
 
   .topProductionHeader {
     display: flex;
