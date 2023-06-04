@@ -222,7 +222,7 @@ a:hover {
   flex: 1;
 }
 
-.about-me-title {
+h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
@@ -476,7 +476,7 @@ a:hover {
   font-size: 2.0rem;
 }
 
-.stopMotionHeader {
+h1 {
   display: flex;
   justify-content: center;
   color: white;
@@ -538,6 +538,15 @@ a:hover {
 
   .dropdown_menu {
     display: block;
+  }
+  .main{
+    display: block;
+  }
+  .main > .about-me-video{
+    order: 1;
+  }
+  .main > .about-me-test{
+    order: 2;
   }
 
   /* .video-wrapper p {
@@ -609,14 +618,6 @@ a:hover {
     margin-top: 25%;
     color: white;
     font-size: 2.0rem;
-  }
-
-  .stopMotionHeader {
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 3.0rem;
-    margin-top: 150px;
   }
 
   #coming-soon {
@@ -741,7 +742,7 @@ a:hover {
 
   }
 
-  .about-me-title {
+  .h2{
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
@@ -764,7 +765,7 @@ a:hover {
     margin: 5px 5px;
   }
 
-  .stopMotionHeader {
+  h1 {
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -773,8 +774,8 @@ a:hover {
     align-items: center;
     margin-left: unset;
     color: white;
-    font-size: 1.25rem;
-    margin-top: 100px;
+    font-size: 2.25rem;
+    margin-top: 150px;
     margin-bottom: 50px;
   }
 
