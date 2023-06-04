@@ -287,11 +287,11 @@ h2 {
   margin-top: 25px;
 }
 
-.centered
-{
+.centered {
   width: 80%;
   padding-left: 40px;
 }
+
 .video {
   justify-content: center;
   /* margin-top: 100px;;
@@ -541,6 +541,7 @@ h1 {
   .dropdown_menu {
     display: block;
   }
+
   .main {
     display: flex;
     flex-direction: column;
@@ -559,6 +560,7 @@ h1 {
     padding-bottom: 15px;
 
   }
+
   .main2 {
     display: flex;
     flex-direction: column;
@@ -575,10 +577,12 @@ h1 {
     background-color: #0b5351;
     color: white;
   }
+
   .pic-div {
     margin: 10px 15px;
     margin-top: 50px;
   }
+
   .about-phoenix-paragraph {
     margin: unset;
     margin-left: 0;
@@ -589,6 +593,7 @@ h1 {
     min-width: unset;
     line-height: 1.75;
   }
+
   .about-phoenix {
     /* max-width: 350px; */
     padding: 25px 75px;
@@ -599,6 +604,7 @@ h1 {
   .about-me-test-1 {
     order: 1;
   }
+
   .about-me-test-2 {
     order: 2;
   }
@@ -709,6 +715,7 @@ h1 {
     padding-bottom: 15px;
 
   }
+
   .main2 {
     display: flex;
     flex-direction: column;
@@ -729,6 +736,7 @@ h1 {
   .about-me-test-1 {
     order: 1;
   }
+
   .about-me-test-2 {
     order: 2;
   }
@@ -750,7 +758,7 @@ h1 {
   }
 
 
- 
+
 
   .pic-div {
     margin: 10px 15px;
@@ -787,7 +795,7 @@ h1 {
     padding-bottom: 25px;
     padding-top: 0;
     margin-top: 0;
-   
+
   }
 
   .about-me {
@@ -802,7 +810,7 @@ h1 {
 
   }
 
-  .h2{
+  .h2 {
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
