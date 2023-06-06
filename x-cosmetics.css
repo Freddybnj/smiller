@@ -1,0 +1,41 @@
+/* (A) SHARED */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+#notify, #cform { max-width: 400px; }
+
+/* (B) NOTIFICATION */
+#notify {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffc8c8;
+  background: #ffe9e9;
+}
+
+/* (C) FORM */
+#cform {
+  padding: 20px;
+  border: 1px solid #dfdfdf;
+  background: #484071;
+}
+#cform label, #cform input, #cform textarea {
+  display: block;
+  color: white;
+  width: 100%;
+  resize: none;
+}
+#cform label { margin: 10px 0; }
+#cform label:first-child { margin-top: 0; }
+#cform input, #cform textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #c7c7c7;
+}
+.g-recaptcha { margin: 20px 0; }
+#cform input[type=submit] {
+  border: 1;
+  color: white;
+  background: #6a648f;
+  cursor: pointer;
+}
