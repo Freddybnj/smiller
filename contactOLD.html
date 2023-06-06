@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -13,27 +14,24 @@
     <!-- JavaScript -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-   
+
     <!-- Custom CSS -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="app.css">
-    <!-- Contact form CSS -->
-    <link rel="stylesheet" href="x-cosmetics.css">
-
-    <!-- Recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body
+        {
+            background-color: #61825a;
+            background-image: none;
+            min-height: 100vh;
+        }
+    </style>
     <!-- Title -->
-    <title>Shannon Miller</title>
+    <title>Contact</title>
 </head>
 
-<body>
-    <?php
-    if (isset($_POST["name"])) {
-      require "3-process.php";
-      echo "<div id='notify'>$status</div>";
-    }
-    ?>
+<body> 
     <nav class = "navbar navbar-fixed-top" id = "mainNavbar">
         <div class="container-fluid">
             <div class="logo"><a href="index.html"><img src="imgs/SMW.png" id = "brand-logo"></a></div>
@@ -45,11 +43,11 @@
                 <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="productionDesign.html">Production Design</a></li>
                 <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
-                <li><a href="characterDesign.html">Character Design</a></li>
+                <li><a href="puppets.html">Puppets</a></li>
                 <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
-                <li><a href="propDesign.html">Prop Design</a></li>
+                <li><a href="propDesign.html">Props</a></li>
             </ul>
-            <a href="#" class="action_btn">Contact</a>
+            <a href="contact.html" class="action_btn">Contact</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>       
@@ -58,41 +56,71 @@
                 <li><a href="stopMotion.html">Stop Motion</a></li>
                 <li><a href="liveAction.html">Live Action</a></li>
                 <li><a href="productionDesign.html">Production Design</a></li>
-                <li><a href="characterDesign.html">Character Design</a></li>  
-                <li><a href="propDesign.html">Prop Design</a></li>                  
-                <li><a href="#">Contact</a></li>
+                <li><a href="puppets.html">Puppets</a></li>  
+                <li><a href="propDesign.html">Props</a></li>                  
+                <li><a href="contact.html">Contact</a></li>
             </div> 
         </div>     
     </nav> 
 
-    <h1 class = "contactHeader">CONTACT</h1>
 
-    <div class="videos-container">
-        <div class="video-wrapper video embed-responsive">
-          <p id = "selfie">
-<img src="/BlackTalon/imgs/contactformportrait.png" height="50%" width="50%"></div>
-        <div class="contact ">
-           <form id="cform" method="post">
-      <label>Name</label>
-      <input type="text" name="name" required>
+    <div class="container main">
+                <!-- Image Zoom HTML -->   
+        <img id="myImg" src="imgs/Character pics/IMG_1314.jpg" alt="Body One" width="500" height="300">
+            <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    <div id="caption">
 
-      <label>Email</label>
-      <input type="email" name="email" required>
-
-      <label>Message</label>
-      <textarea name="message" required></textarea>
-<div>
-      <!-- (D) CAPTCHA - CHANGE SITE KEY! -->
-      <div class="g-recaptcha" data-sitekey="6LcIOykmAAAAAI1_aKVEA2ozWtZgSU68o4lRe5ex"></div>
-</div>
-      <input type="submit" value="Submit">
-    </form>  <br/><br/>        
-        </div>
     </div>
-    
+    </div>
+    </div>
+    </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
             <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+             
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+                captionText.innerHTML = this.alt;
+            }
+             
+             
+            // When the user clicks on <span> (x), close the modal
+            modal.onclick = function() {
+                img01.className += " out";
+                setTimeout(function() {
+                   modal.style.display = "none";
+                   img01.className = "modal-content";
+                 }, 400);
+                
+             }    
+                
+            </script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -151,7 +179,7 @@
 
           </script>
 
-    <div class = "container-fluid footer">       
+    <div class = "container-fluid footer" style="position: fixed; bottom: 0;">       
         <p>Copyright © 2023 Shannon Miller Films - All Rights Reserved.</p>
         <span id = "arrow">
             <button class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow btn bg-transparent arrowSet"  onclick="window.scrollTo(0, 0)">                
