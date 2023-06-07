@@ -78,7 +78,7 @@ a:hover {
   background: #484071;
   height: 45PX;
   padding-right: 15px;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 .footer p {
@@ -235,6 +235,7 @@ h2 {
 
 .about-me-video {
   padding-top: 80px;
+  margin-left: 9rem;
 }
 
 .main2 {
@@ -243,7 +244,7 @@ h2 {
   padding-top: 100px;
   background-color: #0b5351;
   color: white;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .about-phoenix {
@@ -259,8 +260,16 @@ h2 {
 .about-phoenix-title {
   font-size: 3rem;
   font-weight: bold;
-  margin-left: 180px;
+  /* margin-left: 180px; */
   padding-top: 25px;
+}
+
+.about-me-title {
+  font-size: 3rem;
+  font-weight: bold;
+  /* margin-left: 180px; */
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .about-phoenix-paragraph {
@@ -659,7 +668,7 @@ h1 {
 
   .video-wrapper {
     /* flex-direction: row; */
-    margin: 0 20px;
+    margin: 0 2rem;
     text-align: center;
   }
 
@@ -777,24 +786,27 @@ h1 {
     margin: 0;
     margin-top: 15px;
   }
+  .about-me-title {
+    margin-left: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
 
   .about-phoenix-title {
     margin-left: 0;
     font-size: 2.5rem;
     font-weight: bold;
+    margin-bottom: 3rem;
   }
 
   .about-phoenix-paragraph {
-    margin-left: 0;
-    padding-left: 0;
     font-size: 1rem;
     font-weight: bold;
-    /* max-width: 400px; */
-    min-width: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: white;
     line-height: 1.75;
-    padding-bottom: 25px;
-    padding-top: 0;
-    margin-top: 0;
 
   }
 
@@ -815,6 +827,10 @@ h1 {
     font-weight: bold;
     text-align: center;
     padding-bottom: 25px;
+  }
+
+  .about-me-video{
+    width: 100%;
   }
 
   .about-me-paragraph {
