@@ -16,7 +16,7 @@
    
     <!-- Custom CSS -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="css/app.css">
     <!-- Contact form CSS -->
     <link rel="stylesheet" href="x-cosmetics.css">
 
@@ -49,7 +49,7 @@
                 <li <i class="fa-sharp fa-solid fa-circle fa-2xs dots" style="color: #f9fafa;"></i></li>                    
                 <li><a href="propDesign.html">Prop Design</a></li>
             </ul>
-            <a href="#" class="action_btn">Contact</a>
+            <a href="contact.php" class="action_btn">Contact</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>       
@@ -60,7 +60,7 @@
                 <li><a href="productionDesign.html">Production Design</a></li>
                 <li><a href="characterDesign.html">Character Design</a></li>  
                 <li><a href="propDesign.html">Prop Design</a></li>                  
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.php">Contact</a></li>
             </div> 
         </div>     
     </nav> 
