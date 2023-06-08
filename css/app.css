@@ -221,6 +221,9 @@ a:hover {
   text-align: center;
   flex: 1;
 }
+.vimeoVideos{
+  margin-bottom: 20px;
+}
 
 h2 {
   font-size: 2.5rem;
