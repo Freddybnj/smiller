@@ -258,6 +258,13 @@ h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 50px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: block;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 .about-me-paragraph {
@@ -591,10 +598,14 @@ h1 {
   background-color: #0b5351;
 }
 .PD > .col-lg-8:nth-of-type(2n){
-  background-color: #2a1c3c;
+  background-color: #8d779b;
 }
 .PD > .col-lg-2:nth-of-type(2n-1){
-  background-color: #2a1c3c;
+  background-color: #8d779b;
+}
+
+#purple{
+  background-color: #8d779b;
 }
 /* IDs */
 
