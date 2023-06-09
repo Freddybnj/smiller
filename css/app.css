@@ -59,7 +59,7 @@ a:hover {
 .moveCaptionPhoenix {
   top: 0;
   background-color: black;
-  height: 1em;
+  height: 1.3em;
   width: 13.5em;
   color: white;
   font-family: inherit;
@@ -67,6 +67,25 @@ a:hover {
   margin-top: 1em;
   border-radius: 10%;
   font-size: 1.25em;
+}
+.moveCaptionBA {
+  top: 0;
+  height: 1.3em;
+  color: white;
+  font-family: inherit;
+  padding-top: 0;
+  margin-top: 1em;
+  border-radius: 10%;
+  font-size: 2em;
+}
+
+.moveCaptionBA > p {
+  background-color: black;
+  width: 3em;
+  top: 0;
+  padding-top: 0;
+  margin: auto;
+
 }
 
 .carouselPhoenixMargin {
@@ -207,8 +226,6 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-
-
 
 
 .name-header {
