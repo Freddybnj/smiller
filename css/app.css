@@ -56,6 +56,30 @@ a:hover {
   box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 1);
 }
 
+.moveCaptionPhoenix {
+  top: 0;
+  background-color: black;
+  height: 1em;
+  width: 13.5em;
+  color: white;
+  font-family: inherit;
+  padding-top: 0;
+  margin-top: 1em;
+  border-radius: 10%;
+  font-size: 1.25em;
+}
+
+.carouselPhoenixMargin {
+  margin-bottom: 40px;
+}
+
+.moveCaptionPhoenix:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+}
+
+
 /* .basicImg
 {
     aspect-ratio: 1;
@@ -221,13 +245,19 @@ a:hover {
   text-align: center;
   flex: 1;
 }
-.vimeoVideos{
-  margin-bottom: 20px;
+
+.vimeoVideos {
+  margin-bottom: 30px;
+}
+
+.vimeoVideosRFD {
+  margin-bottom: 30px;
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 .about-me-paragraph {
@@ -237,8 +267,7 @@ h2 {
 }
 
 .about-me-video {
-  padding-top: 150px;
-  margin-left: 9rem;
+  margin: auto;
 }
 
 .main2 {
@@ -425,9 +454,9 @@ h2 {
   display: flex;
   flex-direction: block;
   justify-content: center;
+  text-align: center;
   color: white;
   font-size: 2.0rem;
-  margin-top: 100px;
 }
 
 .prodDesignDescriptionPos {
@@ -442,11 +471,10 @@ h2 {
 
 .phoenixComingSoon {
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.25rem;
 
-  margin: 25px 0;
   /* margin-left: 200px; */
-  text-align: center;
+  text-align: left;
 }
 
 #cs-title {
@@ -490,17 +518,32 @@ h2 {
   font-size: 2.0rem;
 }
 
+.carouselImg img {
+  width: auto;
+  height: auto;
+  max-height: 640px;
+  overflow: hidden;
+
+}
+
 h1 {
   display: flex;
   justify-content: center;
+  text-align: center;
   color: white;
   font-size: 3.0rem;
   margin-top: 150px;
   margin-bottom: 75px;
 }
-h2{
-  margin-bottom: 50px
-}
+
+
+
+
+
+
+
+
+
 
 .main-videos {
   margin-left: auto;
@@ -537,11 +580,34 @@ h2{
   background: #484071;
   transition: background 500ms;
 }
-
-
+.carousel{
+  align-items: center;
+  justify-content: center;
+}
+PD > .col-lg-8:nth-of-type(2n-1){
+  background-color: #0b5351;
+}
+PD > .col-lg-2:nth-of-type(2n){
+  background-color: #0b5351;
+}
+PD > .col-lg-8:nth-of-type(2n){
+  background-color: #2a1c3c;
+}
+PD > .col-lg-2:nth-of-type(2n-1){
+  background-color: #2a1c3c;
+}
 /* IDs */
 
 /* RESPONSIVE DESIGN */
+
+@media (min-width: 1769px) {
+  .carouselPD{
+    height: 660px;
+    width: 1130px;
+  }
+
+}
+
 
 @media (max-width: 1405px) {
 
@@ -575,6 +641,15 @@ h2{
     margin-bottom: 0;
     padding-bottom: 15px;
 
+  }
+
+  .carouselSizing {
+    max-height: 638px;
+  }
+
+  .carousel .item img {
+    max-height: 768px;
+    min-width: auto;
   }
 
   .main2 {
@@ -617,6 +692,14 @@ h2{
     margin-top: 25px;
   }
 
+  
+}
+
+@media (max-width: 1200px) {
+  .vimeoVideosRFD {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
   .about-me-test-1 {
     order: 1;
   }
@@ -624,6 +707,7 @@ h2{
   .about-me-test-2 {
     order: 2;
   }
+
 }
 
 @media (max-width: 740px) {
@@ -793,6 +877,7 @@ h2{
     margin: 0;
     margin-top: 15px;
   }
+
   .about-me-title {
     margin-left: 0;
     font-size: 2.5rem;
@@ -836,9 +921,7 @@ h2{
     padding-bottom: 25px;
   }
 
-  .about-me-video{
-    width: 100%;
-  }
+  
 
   .about-me-paragraph {
     font-size: 1rem;
