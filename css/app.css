@@ -587,32 +587,43 @@ h1 {
   background: #484071;
   transition: background 500ms;
 }
-.carousel{
+
+.carousel {
   align-items: center;
   justify-content: center;
 }
-.PD > .col-lg-8:nth-of-type(2n-1){
+
+.PD>.col-lg-8:nth-of-type(2n-1) {
   background-color: #0b5351;
 }
-.PD > .col-lg-2:nth-of-type(2n){
+
+.PD>.col-lg-2:nth-of-type(2n) {
   background-color: #0b5351;
 }
-.PD > .col-lg-8:nth-of-type(2n){
-  background-color: #8d779b;
-}
-.PD > .col-lg-2:nth-of-type(2n-1){
+
+.PD>.col-lg-8:nth-of-type(2n) {
   background-color: #8d779b;
 }
 
-#purple{
+.PD>.col-lg-2:nth-of-type(2n-1) {
   background-color: #8d779b;
 }
+
+#purple {
+  background-color: #8d779b;
+}
+
+.about-me-test-1 {
+  margin: auto;
+
+}
+
 /* IDs */
 
 /* RESPONSIVE DESIGN */
 
 @media (min-width: 1769px) {
-  .carouselPD{
+  .carouselPD {
     height: 660px;
     width: 1130px;
   }
@@ -702,8 +713,6 @@ h1 {
     margin: 0;
     margin-top: 25px;
   }
-
-  
 }
 
 @media (max-width: 1200px) {
@@ -711,6 +720,7 @@ h1 {
     margin-bottom: 30px;
     margin-top: 30px;
   }
+
   .about-me-test-1 {
     order: 1;
   }
@@ -932,7 +942,7 @@ h1 {
     padding-bottom: 25px;
   }
 
-  
+
 
   .about-me-paragraph {
     font-size: 1rem;
