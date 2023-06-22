@@ -348,6 +348,9 @@ h2 {
   /* min-width: 700px; */
 }
 
+#cform {
+  max-width: 700px;
+}
 
 /* I've checked thru this far in css and html */
 

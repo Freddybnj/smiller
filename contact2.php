@@ -66,17 +66,17 @@
 
     <h1 class="contactHeader">CONTACT</h1>
 
-    <div class="containe-fluid centered" style="margin:auto;">
+    <div class='container-fluid centered'>
         <div class="row">
-            <div class="col-lg-12 col-xl-6" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="col-lg-12 col-xl-6 d-flex justify-content-center mb-5">
                 <img src="imgs/contactformportraitcircle.png" height="350px" class="image-fluid">
             </div>
 
-            <<div class="col-lg-12 col-xl-6" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="col-lg-12 col-xl-6 d-flex justify-content-center">
                 <div class="contact">
-                    <form id="cform" method="post">
+                    <form id="cform" method="post" style="width:100%">
                         <label>Name</label>
-                        <input type="text" name="name" required>
+                        <input type=" text" name="name" required>
 
                         <label>Email</label>
                         <input type="email" name="email" required>
@@ -91,8 +91,8 @@
                         <input type="submit" value="Submit">
                     </form>
                 </div>
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- Optional JavaScript -->
