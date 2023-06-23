@@ -292,6 +292,10 @@ h2 {
   line-height: 1.75rem;
   font-size: 1.5rem;
   font-weight: bold;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
 .about-me-video {
@@ -681,15 +685,13 @@ h1 {
   .main {
     display: flex;
     flex-direction: column;
-    /* flex-flow: column-reverse; */
+    flex-flow: column-reverse;
     justify-content: center;
     align-items: center;
     align-content: center;
     margin-top: 500px;
     margin-left: 0;
     padding-left: 0;
-    /* margin-left: 5px;
-            margin-right: 5px; */
     background-color: #2a1c3c;
     color: white;
     margin-bottom: 0;
@@ -729,14 +731,26 @@ h1 {
   }
 
   .about-phoenix-paragraph {
-    margin: unset;
-    margin-left: 0;
+    margin: auto;
+    margin-left: 40px;
     padding-left: 0;
     font-size: 1rem;
     font-weight: bold;
     /* max-width: 400px; */
     min-width: unset;
     line-height: 1.75;
+  }
+
+  .about-me-paragraph {
+    margin: auto;
+    margin-left: 40px;
+    padding-left: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    /* max-width: 400px; */
+    min-width: unset;
+    line-height: 1.75;
+
   }
 
   .about-phoenix {
@@ -753,6 +767,10 @@ h1 {
     margin-top: 30px;
   }
 
+  .mt-xs-5 {
+    margin-top: 20px;
+  }
+
   .about-me-test-1 {
     order: 1;
   }
@@ -761,7 +779,32 @@ h1 {
     order: 2;
   }
 
+  .about-phoenix-paragraph {
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .title {
+    font-size: 1rem;
+    margin-left: 0px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+    margin-left: 5px;
+  }
+
+  .name-header {
+    margin-top: 350px;
+    margin-left: 75px;
+    color: white;
+  }
+
 }
+
+
 
 @media (max-width: 740px) {
   body {
@@ -769,23 +812,23 @@ h1 {
 
   }
 
-  .name-header {
-    margin-top: 275px;
-    margin-left: 35px;
-    color: white;
+  .title {
+    font-size: .75rem;
+    font-weight: bold;
+    margin-left: 2px;
+
   }
 
   .name {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0;
   }
 
-  .title {
-    font-size: .5rem;
-    font-weight: bold;
-    margin-left: 10px;
-
+  .name-header {
+    margin-top: 350px;
+    margin-left: 25px;
+    color: white;
   }
 
   .dropdown_menu {
@@ -869,7 +912,7 @@ h1 {
 
   }
 
-  .main2 {
+  */ .main2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -948,10 +991,12 @@ h1 {
   .about-phoenix-paragraph {
     font-size: 1rem;
     font-weight: bold;
-    padding-bottom: 0;
+    padding-bottom: 20px;
     margin-bottom: 0;
     color: white;
     line-height: 1.75;
+    text-align: center;
+    margin-left: 0;
 
   }
 
@@ -988,7 +1033,7 @@ h1 {
   .pho-picture-sm {
     margin-top: 40px;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 90%;
     margin: 5px 5px;
   }
 
