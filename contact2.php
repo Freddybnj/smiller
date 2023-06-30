@@ -35,10 +35,6 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
-  background-color: red;
-  color: white;
-  text-align: center;
 }
 
     </style>
@@ -172,7 +168,7 @@
 
         </script>
 
-        <div class="container-fluid footer"style= "height: 0px;">
+        <div class="container-fluid footer">
             <p>Copyright © 2023 Shannon Rose Originals - All Rights Reserved.</p>
             <span id="arrow">
                 <button class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow btn bg-transparent arrowSet"
