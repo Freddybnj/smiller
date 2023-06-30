@@ -161,7 +161,7 @@
 
         </script>
 
-        <div class="container-fluid footer">
+        <div class="container-fluid footer"style= "height: 0px;">
             <p>Copyright © 2023 Shannon Rose Originals - All Rights Reserved.</p>
             <span id="arrow">
                 <button class="fa-sharp fa-solid fa-arrow-up-long fa-lg arrow btn bg-transparent arrowSet"
@@ -170,5 +170,4 @@
             </span>
         </div>
     </body>
-
 </html>
