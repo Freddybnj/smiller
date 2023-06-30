@@ -71,7 +71,7 @@
 
         <h1 class="contactHeader">CONTACT</h1>
 
-        <div class='container-fluid centered'>
+        <div class='container-fluid centered' style="height: 110vh;">
             <div class="row">
                 <div class="col-lg-12 col-xl-6 d-flex justify-content-center mb-5">
                     <img src="imgs/contactformportraitcircle.png" height="350px" class="image-fluid">
